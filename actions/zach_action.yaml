@@ -1,0 +1,3 @@
+name: Zach's Action
+description: This is an example, and the workflow identifier string is probably not valid
+workflow: zach/test_workflow_app:v0.0.2
