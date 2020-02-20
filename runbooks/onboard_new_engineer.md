@@ -14,8 +14,8 @@
 * For example, `josh@transposit.com` could be the main account, with `jfraser@transposit.com` and `jfray@transposit.com` as aliases
 
 ## Google Groups
-* [Invite] the new employee to the appropriate [Google Groups](https://support.google.com/a/users/answer/9304805?hl=en)
 * [Transposit](https://www.transposit.com) uses [Google Groups](https://support.google.com/a/users/answer/9304805?hl=en) for distribution lists, with the added benefit of searching archived threads
+* [Invite] the new employee to the appropriate [Google Groups](https://support.google.com/a/users/answer/9304805?hl=en)
 
 ## HR Tasks
 * The [HR representative](mailto:hr@transposit.com) will have the new employee fill out their employment and benefits paperwork
@@ -30,6 +30,7 @@
 * * Provide the username to [SRE](mailto:sre@transposit.com) so that they can run the `sre-scripts/sandbox.py` management script
 
 ## GitHub Repository Access
+* [Transposit](https://www.transposit.com) uses [GitHub](https://www.github.com) for `source code management / SCM`
 * If the employee already has an active [GitHub](https://www.github.com) account they would like to use, [add that user](https://www.transposit.com) to the [Transposit](https://www.github.com/transposit) organization
 * * If the employee does not have an active [GitHub](https://www.github.com) account, [create one](https://www.transposit.com) for them
 * [Add the employee to the appropriate groups](https://www.transposit.com) for necessary permissions
