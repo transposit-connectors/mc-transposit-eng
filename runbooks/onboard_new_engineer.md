@@ -2,7 +2,7 @@
 * When a new engineer starts at Transposit, there are several accounts and configurations that need to be updated.
 
 ## Create an Email Address
-* [Click here to create|https://www.google.com]
+* [Click here to create](https://www.google.com)
 * One of the most important things is to create a new email address
 * The username chosen for the email address will be re-used as the new employee's account name for other services
 * Due to length restrictions, it is best if the main account is 8 characters or less if possible
