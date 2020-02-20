@@ -47,8 +47,8 @@
 * * [Provide links](https://www.transposit.com) to machine setup, company values, OpsGenie notification setup, Accessing AWS / Sandbox
 
 ## Jira Access
-* [Transposit](https://www.transposit.com) uses Atlassian's hosted Jira for application bug tracking, issue tracking, and project management.
-* * [Assign a ticket](https://www.transposit.com) in Jira to the employee to track machine setup and other questions the employee might have
+* [Transposit](https://www.transposit.com) uses [Atlassian's hosted Jira](https://www.atlassian.com/software/jira) application for bug tracking, issue tracking, and project management.
+* * [Assign a ticket](https://www.transposit.com) in [Jira](https://www.atlassian.com/software/jira) to the employee to track machine setup and other questions the employee might have
 
 ## OpsGenie
 * Using the email address prevoiusly created, [invite the employee to OpsGenie](https://www.transposit.com)
