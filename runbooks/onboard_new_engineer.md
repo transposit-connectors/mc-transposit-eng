@@ -53,7 +53,7 @@
 ## OpsGenie
 * [Transposit](https://www.transposit.com) uses [Atlassian's hosted OpsGenie](https://www.atlassian.com/software/opsgenie) application to manage alert notification and on-call schedules
 * Using the email address prevoiusly created, [invite the employee](https://www.transposit.com) to [OpsGenie](https://www.atlassian.com/software/opsgenie)
-* * [Send a link]](https://www.transposit.com) to download the [OpsGenie](https://www.atlassian.com/software/opsgenie) mobile application
+* * [Send a link](https://www.transposit.com) to download the [OpsGenie](https://www.atlassian.com/software/opsgenie) mobile application
 * * * [Android](https://play.google.com/store/apps/details?id=com.ifountain.opsgenie&hl=en_US)
 * * * [iOS](https://apps.apple.com/us/app/opsgenie/id528590328)
 * * [Send a test notification](https://www.transposit.com) to make sure the employee has configured their application correctly
