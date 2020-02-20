@@ -1,0 +1,3 @@
+name: Send Confluence Links
+description: Send user a series of links to content on Confluence
+workflow: changeme
