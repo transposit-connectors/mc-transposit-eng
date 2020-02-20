@@ -22,7 +22,9 @@
 * Using the email address previously created, [invite the employee to Ease](https://www.transposit.com)
 * * [Transposit](https://www.transposit.com) uses [Ease](https://www.ease.com) to manage benefits, discretionary time off, and other HR-related functions
 
-## Create AWS User
+## Create AWS IAM User
+* [Transposit](https://www.transposit.com) is hosted by [Amazon Web Services / AWS](https://aws.amazon.com)
+* * Each engineer is provided an AWS user, which is managed by their [Identity and Access Management / IAM](https://www.amazonaws.cn/en/iam/) service
 * Using the username from the email step, [create an IAM user](https://www.transposit.com)
 * Provide the username to [SRE](mailto:sre@transposit.com) so that they can run the `sre-scripts/sandbox.py` management script
 * * Documentation for `sre-scripts/sandbox.py` usage will be sent as part of the [Confluence and Jira Access](#Confluence-and-Jira-Access) step 
