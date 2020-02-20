@@ -3,6 +3,7 @@
 
 ## Create an Email Address
 * One of the most important things is to [create a new email address](https://console.transposit.com/mc/t/transposit/actions/create_transposit_email)
+* * Doesn't look like this is something that can be automated yet. Still looking.
 * The username chosen for the email address will be re-used as the new employee's account name for other services
 * Due to length restrictions, it is best if the main account is 8 characters or less if possible
 * At the current time, it's recommended to use the employee's first name
