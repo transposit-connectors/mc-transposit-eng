@@ -2,6 +2,7 @@
 * When a new engineer starts at Transposit, there are several accounts and configurations that need to be updated.
 
 ## Create an Email Address
+* [Transposit](https://www.transposit.com) uses [Google's G-Suite](https://gsuite.google.com/intl/en_ca/) for e-mail and shared documents
 * One of the most important things is to [create a new email address](https://console.transposit.com/mc/t/transposit/actions/create_transposit_email)
 * * Doesn't look like this is something that can be automated yet. Still looking.
 * The username chosen for the email address will be re-used as the new employee's account name for other services
