@@ -1,0 +1,3 @@
+name: Invite User to Jira
+description: Invite user to Atlassian Jira ticketing system
+workflow: changeme
