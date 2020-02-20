@@ -39,8 +39,8 @@
 
 ## Slack Access
 * [Transposit](https://www.transposit.com) uses [Slack](https://www.slack.com) for team communication
-* * Using the email address previously created, [invite the employee](https://www.transposit.com) to [Slack](https://www.slack.com)
-* * [Add the employee](https://www.transposit.com) to appropriate [Slack](https://www.slack.com) channels
+* * Using the email address previously created, [invite the employee](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_slack) to [Slack](https://www.slack.com)
+* * [Add the employee](https://console.transposit.com/mc/t/transposit/actions/add_slack_user_to_channels) to appropriate [Slack](https://www.slack.com) channels
 
 ## Confluence Access
 * [Transposit](https://www.transposit.com) uses [Atlassian's hosted Confluence](https://www.atlassian.com/software/confluence) application for Documentation
