@@ -41,12 +41,14 @@
 * * Using the email address previously created, [invite the employee](https://www.transposit.com) to [Slack](https://www.slack.com)
 * * [Add the employee](https://www.transposit.com) to appropriate [Slack](https://www.slack.com) channels
 
-## Confluence and Jira Access
-* Using the email address previously created, [invite the employee to Confluence and Jira](https://www.transposit.com)
-* [Provide links](https://www.transposit.com) to machine setup, company values, OpsGenie notification setup, Accessing AWS / Sandbox
-* [Assign a Jira ticket](https://www.transposit.com) to the employee to track machine setup and other questions
-* * This validates that the new employee can interact with the ticketing system
-* * It also allows us to track their onboarding progress
+## Confluence Access
+* [Transposit](https://www.transposit.com) uses Atlassian's hosted Confluence application for Documentation
+* * Using the email address previously created, [invite the employee](https://www.transposit.com) to Confluence
+* * [Provide links](https://www.transposit.com) to machine setup, company values, OpsGenie notification setup, Accessing AWS / Sandbox
+
+## Jira Access
+* [Transposit](https://www.transposit.com) uses Atlassian's hosted Jira for application bug tracking, issue tracking, and project management.
+* * [Assign a ticket](https://www.transposit.com) in Jira to the employee to track machine setup and other questions the employee might have
 
 ## OpsGenie
 * Using the email address prevoiusly created, [invite the employee to OpsGenie](https://www.transposit.com)
