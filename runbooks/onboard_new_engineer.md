@@ -25,8 +25,8 @@
 
 ## Create AWS IAM User
 * [Transposit](https://www.transposit.com) is hosted by [Amazon Web Services / AWS](https://aws.amazon.com)
-* * Each engineer is provided an AWS user, which is managed by their [Identity and Access Management / IAM](https://www.amazonaws.cn/en/iam/) service
-* Using the username from the email step, [create an IAM user](https://www.transposit.com)
+* Each engineer is provided an AWS user, which is managed by their [Identity and Access Management / IAM](https://www.amazonaws.cn/en/iam/) service
+* * Using the username from the email step, [create an IAM user](https://www.transposit.com)
 * Each engineer is provided an [AWS development sandbox](https://transposit.atlassian.net/wiki/spaces/DEV/pages/310706177/Sandbox+AWS+Accounts) to develop, test, and deploy code
 * * Provide the username to [SRE](mailto:sre@transposit.com) so that they can run the `sre-scripts/sandbox.py` management script
 
