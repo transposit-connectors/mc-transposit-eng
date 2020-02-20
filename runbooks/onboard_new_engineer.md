@@ -42,8 +42,8 @@
 * * [Add the employee](https://www.transposit.com) to appropriate [Slack](https://www.slack.com) channels
 
 ## Confluence Access
-* [Transposit](https://www.transposit.com) uses Atlassian's hosted Confluence application for Documentation
-* * Using the email address previously created, [invite the employee](https://www.transposit.com) to Confluence
+* [Transposit](https://www.transposit.com) uses [Atlassian's hosted Confluence](https://www.atlassian.com/software/confluence) application for Documentation
+* * Using the email address previously created, [invite the employee](https://www.transposit.com) to [Confluence](https://www.atlassian.com/software/confluence)
 * * [Provide links](https://www.transposit.com) to machine setup, company values, OpsGenie notification setup, Accessing AWS / Sandbox
 
 ## Jira Access
