@@ -28,7 +28,6 @@
 * Using the username from the email step, [create an IAM user](https://www.transposit.com)
 * Each engineer is provided an [AWS development sandbox](https://transposit.atlassian.net/wiki/spaces/DEV/pages/310706177/Sandbox+AWS+Accounts) to develop, test, and deploy code
 * * Provide the username to [SRE](mailto:sre@transposit.com) so that they can run the `sre-scripts/sandbox.py` management script
-* * * Documentation for `sre-scripts/sandbox.py` usage will be sent as part of the [Confluence and Jira Access](#Confluence-and-Jira-Access) step 
 
 ## GitHub Repository Access
 * If the employee already has an active `GitHub` account they would like to use, [add that user](https://www.transposit.com) to the `Transposit` organization
