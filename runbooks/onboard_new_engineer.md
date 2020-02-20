@@ -32,9 +32,9 @@
 
 ## GitHub Repository Access
 * [Transposit](https://www.transposit.com) uses [GitHub](https://www.github.com) for `source code management / SCM`
-* If the employee already has an active [GitHub](https://www.github.com) account they would like to use, [add that user](https://www.transposit.com) to the [Transposit](https://www.github.com/transposit) organization
-* * If the employee does not have an active [GitHub](https://www.github.com) account, [create one](https://www.transposit.com) for them
-* [Add the employee to the appropriate groups](https://www.transposit.com) for necessary permissions
+* * If the employee already has an active [GitHub](https://www.github.com) account they would like to use, [add that user](https://www.transposit.com) to the [Transposit](https://www.github.com/transposit) organization
+* * * If the employee does not have an active [GitHub](https://www.github.com) account, [create one](https://www.transposit.com) for them
+* * [Add the employee to the appropriate groups](https://www.transposit.com) for necessary permissions
 
 ## Slack Access
 * [Transposit](https://www.transposit.com) uses [Slack](https://www.slack.com) for team communication
