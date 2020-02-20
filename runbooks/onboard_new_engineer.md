@@ -13,6 +13,10 @@
 * The new employee might ask to [create an alias](https://www.transposit.com), such as first initial, last name - or a nickname
 * For example, `josh@transposit.com` could be the main account, with `jfraser@transposit.com` and `jfray@transposit.com` as aliases
 
+## Google Groups
+* [Invite] the new employee to the appropriate [Google Groups](https://support.google.com/a/users/answer/9304805?hl=en)
+* [Transposit](https://www.transposit.com) uses [Google Groups](https://support.google.com/a/users/answer/9304805?hl=en) for distribution lists, with the added benefit of searching archived threads
+
 ## HR Tasks
 * The HR representative will have the new employee fill out their employment and benefits paperwork
 * Using the email address previously created, [invite the employee to Ease](https://www.transposit.com)
