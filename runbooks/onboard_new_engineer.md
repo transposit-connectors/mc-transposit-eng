@@ -30,8 +30,8 @@
 * * Provide the username to [SRE](mailto:sre@transposit.com) so that they can run the `sre-scripts/sandbox.py` management script
 
 ## GitHub Repository Access
-* If the employee already has an active `GitHub` account they would like to use, [add that user](https://www.transposit.com) to the `Transposit` organization
-* * If the employee does not have an active `GitHub` account, [create one](https://www.transposit.com) for them
+* If the employee already has an active [GitHub](https://www.github.com) account they would like to use, [add that user](https://www.transposit.com) to the [Transposit](https://www.github.com/transposit) organization
+* * If the employee does not have an active [GitHub](https://www.github.com) account, [create one](https://www.transposit.com) for them
 * [Add the employee to the appropriate groups](https://www.transposit.com) for necessary permissions
 
 ## Slack Access
