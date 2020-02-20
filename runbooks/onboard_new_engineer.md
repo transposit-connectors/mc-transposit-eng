@@ -19,9 +19,8 @@
 
 ## HR Tasks
 * The [HR representative](mailto:hr@transposit.com) will have the new employee fill out their employment and benefits paperwork
-* [Transposit](https://www.transposit.com) uses [Ease](https://www.ease.com) to manage benefits, discretionary time off, and other HR-related functions
 * Using the email address previously created, [invite the employee to Ease](https://www.transposit.com)
-* * [Invite employee to other sites](https://www.transposit.com) here as applicable 
+* * [Transposit](https://www.transposit.com) uses [Ease](https://www.ease.com) to manage benefits, discretionary time off, and other HR-related functions
 
 ## Create AWS User
 * Using the username from the email step, [create an IAM user](https://www.transposit.com)
