@@ -38,7 +38,7 @@
 
 ## Slack Access
 * [Transposit](https://www.transposit.com) uses [Slack](https://www.slack.com) for team communication
-* Using the email address previously created, [invite the employee to Slack](https://www.transposit.com)
+* * Using the email address previously created, [invite the employee to Slack](https://www.transposit.com)
 * [Add the employee to appropriate Slack channels](https://www.transposit.com)
 
 ## Confluence and Jira Access
