@@ -44,8 +44,8 @@
 
 ## Confluence Access
 * [Transposit](https://www.transposit.com) uses [Atlassian's hosted Confluence](https://www.atlassian.com/software/confluence) application for Documentation
-* * Using the email address previously created, [invite the employee](https://www.transposit.com) to [Confluence](https://www.atlassian.com/software/confluence)
-* * [Provide links](https://www.transposit.com) to machine setup, company values, OpsGenie notification setup, Accessing AWS / Sandbox
+* * Using the email address previously created, [invite the employee](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_confluence) to [Confluence](https://www.atlassian.com/software/confluence)
+* * [Provide links](https://console.transposit.com/mc/t/transposit/actions/send_confluence_links) to machine setup, company values, OpsGenie notification setup, Accessing AWS / Sandbox
 
 ## Jira Access
 * [Transposit](https://www.transposit.com) uses [Atlassian's hosted Jira](https://www.atlassian.com/software/jira) application for bug tracking, issue tracking, and project management.
