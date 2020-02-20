@@ -11,7 +11,7 @@
 * * At some point in the future, this may change due to company size and availability.
 
 ### Add Email Aliases if Applicable
-* The new employee might ask to [create an alias](https://www.transposit.com), such as first initial, last name - or a nickname
+* The new employee might ask to [create an alias](https://console.transposit.com/mc/t/transposit/actions/add_transposit_email_alias), such as first initial, last name - or a nickname
 * For example, `josh@transposit.com` could be the main account, with `jfraser@transposit.com` and `jfray@transposit.com` as aliases
 
 ## Google Groups
