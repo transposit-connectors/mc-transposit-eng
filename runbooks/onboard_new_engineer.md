@@ -49,7 +49,8 @@
 
 ## Jira Access
 * [Transposit](https://www.transposit.com) uses [Atlassian's hosted Jira](https://www.atlassian.com/software/jira) application for bug tracking, issue tracking, and project management.
-* * [Assign a ticket](https://www.transposit.com) in [Jira](https://www.atlassian.com/software/jira) to the employee to track machine setup and other questions the employee might have
+* * Using the email address previously created, [invite the employee](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_jira) to [Jira](https://www.atlassian.com/software/jira)
+* * [Assign a ticket](https://console.transposit.com/mc/t/transposit/actions/assign_jira_ticket_for_onboarding) in [Jira](https://www.atlassian.com/software/jira) to the employee to track machine setup and other questions the employee might have
 
 ## OpsGenie
 * [Transposit](https://www.transposit.com) uses [Atlassian's hosted OpsGenie](https://www.atlassian.com/software/opsgenie) application to manage alert notification and on-call schedules
