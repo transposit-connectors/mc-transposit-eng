@@ -39,7 +39,7 @@
 * Using the email address previously created, [invite the employee to Slack](https://www.transposit.com)
 * [Add the employee to appropriate Slack channels](https://www.transposit.com)
 
-##Confluence and Jira Access
+## Confluence and Jira Access
 * Using the email address previously created, [invite the employee to Confluence and Jira](https://www.transposit.com)
 * [Provide links](https://www.transposit.com) to machine setup, company values, OpsGenie notification setup, Accessing AWS / Sandbox
 * [Assign a Jira ticket](https://www.transposit.com) to the employee to track machine setup and other questions
