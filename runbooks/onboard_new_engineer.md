@@ -54,4 +54,4 @@
 * Using the email address prevoiusly created, invite the employee to OpsGenie
 * * Also send a link to download the OpsGenie mobile application.
 * Send a test notification to make sure the employee has configured their application correctly
-[Click here to invite employee to OpsGenie and send test notfication](https://www.transposit.com)
+* [Click here to invite employee to OpsGenie and send test notfication](https://www.transposit.com)
