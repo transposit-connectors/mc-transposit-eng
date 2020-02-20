@@ -16,7 +16,7 @@
 
 ## Google Groups
 * [Transposit](https://www.transposit.com) uses [Google Groups](https://support.google.com/a/users/answer/9304805?hl=en) for distribution lists, with the added benefit of searching archived threads
-* * [Invite] the new employee to the appropriate [Google Groups](https://support.google.com/a/users/answer/9304805?hl=en)
+* * [Invite](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_goole_groups) the new employee to the appropriate [Google Groups](https://support.google.com/a/users/answer/9304805?hl=en)
 
 ## HR Tasks
 * [Transposit](https://www.transposit.com) uses [Ease](https://www.ease.com) to manage benefits, discretionary time off, and other HR-related functions
