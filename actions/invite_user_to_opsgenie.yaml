@@ -1,0 +1,3 @@
+name: Invite User to OpsGenie
+description: Invite user to Atlassian OpsGenie alerting system
+workflow: changeme
