@@ -1,3 +1,3 @@
-name: Create transposit.com email
-description: Creates a transposit.com email address
-workflow: changeme
+---
+description: "Creates a transposit.com email address"
+workflow: "transposit/create_transposit_email:latest"
