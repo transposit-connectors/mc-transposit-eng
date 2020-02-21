@@ -2,7 +2,6 @@
 When a new engineer starts at Transposit, there are several accounts and configurations that need to be updated.
 
 ## Create an Email Address
-[Create Email Address](https://console.transposit.com/mc/t/transposit/actions/create_transposit_email)
 
 Transposit uses Google's G-Suite for e-mail and shared documents. 
 One of the most important things is to create the engineer's email address, but it doesn't look like this is something that can be automated yet.
@@ -16,6 +15,8 @@ Some things to keep in mind:
 *At the current time, it's recommended to use the employee's first name*
 
 _At some point in the future, this may change due to company size and availability_
+
+[Create Email Address](https://console.transposit.com/mc/t/transposit/actions/create_transposit_email)
 
 ## Add Email Aliases if Applicable
 The new employee might ask to [create an alias](https://console.transposit.com/mc/t/transposit/actions/add_transposit_email_alias), such as first initial, last name - or a nickname
