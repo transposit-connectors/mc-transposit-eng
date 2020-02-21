@@ -56,18 +56,20 @@ Some things to keep in mind:
 - Adding the engineer's GitHub account allows access to Transposit's private repositories, and permissions based on group access
 
 ## Slack
-[Transposit](https://www.transposit.com) uses [Slack](https://www.slack.com) for team communication
+[Invite to Slack](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_slack)
+[Add to Channels](https://console.transposit.com/mc/t/transposit/actions/add_slack_user_to_channels)
 
-  Using the email address previously created, [invite the employee](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_slack) to [Slack](https://www.slack.com)
+- Transposit uses Slack for real-time team communication
 
-  [Add the employee](https://console.transposit.com/mc/t/transposit/actions/add_slack_user_to_channels) to appropriate [Slack](https://www.slack.com) channels
+- Adding the engineer to the appropriate channels provides immediate access to important and pertient conversations.
 
 ## Confluence
-[Transposit](https://www.transposit.com) uses [Atlassian's hosted Confluence](https://www.atlassian.com/software/confluence) application for Documentation
+[Invite to Confluence](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_confluence)
+[Provide Links](https://console.transposit.com/mc/t/transposit/actions/send_confluence_links)
 
-  Using the email address previously created, [invite the employee](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_confluence) to [Confluence](https://www.atlassian.com/software/confluence)
+- Transposit uses Atlassian's hosted Confluence application for Documentation
 
-  [Provide links](https://console.transposit.com/mc/t/transposit/actions/send_confluence_links) to machine setup, company values, OpsGenie notification setup, Accessing AWS / Sandbox
+- Links to documentation for machine setup, company values, OpsGenie notification setup, Accessing AWS / Sandbox will be sent to the new engineer
 
 ## Jira Access
 [Transposit](https://www.transposit.com) uses [Atlassian's hosted Jira](https://www.atlassian.com/software/jira) application for bug tracking, issue tracking, and project management.
