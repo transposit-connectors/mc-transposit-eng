@@ -34,7 +34,7 @@ Some things to keep in mind:
 [Invite to Ease](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_ease)
 - Transposit uses Ease to manage benefits, discretionary time off, and other HR-related functions
 
-- The [HR representative](mailto:hr@transposit.com) will have the new employee fill out their employment and benefits paperwork
+- The HR representative will have the new employee fill out their employment and benefits paperwork
 
 ## Create AWS IAM User
 [Create IAM User](https://console.transposit.com/mc/t/transposit/actions/create_iam_user)
