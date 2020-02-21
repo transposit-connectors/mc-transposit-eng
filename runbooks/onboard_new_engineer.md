@@ -38,7 +38,7 @@ Some things to keep in mind:
 
 ## Create AWS IAM User
 [Create IAM User](https://console.transposit.com/mc/t/transposit/actions/create_iam_user)
-[Assign Sandbox Ticket](htps://console.transposit.com/mc/t/transposit/actions/assign_jira_ticket_for_sandbox_creation)
+[Assign Sandbox Ticket](https://console.transposit.com/mc/t/transposit/actions/assign_jira_ticket_for_sandbox_creation)
 
 - Transposit is hosted by `Amazon Web Services / AWS`
 
