@@ -37,16 +37,16 @@ Some things to keep in mind:
 - The [HR representative](mailto:hr@transposit.com) will have the new employee fill out their employment and benefits paperwork
 
 ## Create AWS IAM User
-[Create IAM user](https://console.transposit.com/mc/t/transposit/actions/create_iam_user)
+[Create IAM User](https://console.transposit.com/mc/t/transposit/actions/create_iam_user)
+[Assign Sandbox Ticket](htps://console.transposit.com/mc/t/transposit/actions/assign_jira_ticket_for_sandbox_creation)
 
-- Transposit is hosted by Amazon Web Services / AWS
+- Transposit is hosted by `Amazon Web Services / AWS`
 
-- Each engineer is provided an AWS user, which is managed by their Identity and Access Management / IAM service
+- Each engineer is provided an AWS user, which is managed by their `Identity and Access Management / IAM` service
 
+- Each engineer is provided an AWS development sandbox to develop, test, and deploy code
 
-Each engineer is provided an [AWS development sandbox](https://transposit.atlassian.net/wiki/spaces/DEV/pages/310706177/Sandbox+AWS+Accounts) to develop, test, and deploy code
-
-  Provide the username to [SRE](mailto:sre@transposit.com) so that they can run the `sre-scripts/sandbox.py` management script
+- `Site Reliability Engineering / SRE` will be assigned a ticket to create the development sandbox
 
 ## GitHub
 [Transposit](https://www.transposit.com) uses [GitHub](https://www.github.com) for `source code management / SCM`
