@@ -71,7 +71,7 @@ Some things to keep in mind:
 
 - Links to documentation for machine setup, company values, OpsGenie notification setup, Accessing AWS / Sandbox will be sent to the new engineer
 
-## Jira Access
+## Jira
 [Invite to Jira](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_jira)
 [Assign Onboard Ticket](https://console.transposit.com/mc/t/transposit/actions/assign_jira_ticket_for_onboarding)
 
