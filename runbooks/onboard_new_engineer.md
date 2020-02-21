@@ -25,7 +25,7 @@ Some things to keep in mind:
 - For example, `josh@transposit.com` could be the main account, with `jfraser@transposit.com` and `jfray@transposit.com` as aliases
 
 ## Google Groups
-[Invite to Appropriate Google Groups](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_google_groups)
+[Invite to Google Groups](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_google_groups)
 - Transposit uses Google Groups for distribution lists, with the added benefit of searching archived threads
 
 - Inviting the new employee to the appropriate Google Groups provides them with access to previous conversations and context as to how decisions were made
