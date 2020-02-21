@@ -49,13 +49,11 @@ Some things to keep in mind:
 - `Site Reliability Engineering / SRE` will be assigned a ticket to create the development sandbox
 
 ## GitHub
-[Transposit](https://www.transposit.com) uses [GitHub](https://www.github.com) for `source code management / SCM`
+[Add User to GitHub](https://console.transposit.com/mc/t/transposit/actions/add_github_user_to_transposit)
 
-  If the employee already has an active [GitHub](https://www.github.com) account they would like to use, [add that user](https://console.transposit.com/mc/t/transposit/actions/add_github_user_to_transposit) to the [Transposit](https://www.github.com/transposit) organization
+- Transposit uses GitHub for `source code management / SCM`
 
-    If the employee does not have an active [GitHub](https://www.github.com) account, [create one](https://console.transposit.com/mc/t/transposit/actions/create_github_user) for them
-
-  [Add the employee to the appropriate groups](https://console.transposit.com/mc/t/transposit/actions/add_github_user_to_groups) for necessary permissions
+- Adding the engineer's GitHub account allows access to Transposit's private repositories, and permissions based on group access
 
 ## Slack
 [Transposit](https://www.transposit.com) uses [Slack](https://www.slack.com) for team communication
