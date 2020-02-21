@@ -31,23 +31,23 @@
 * Each engineer is provided an [AWS development sandbox](https://transposit.atlassian.net/wiki/spaces/DEV/pages/310706177/Sandbox+AWS+Accounts) to develop, test, and deploy code
 * * Provide the username to [SRE](mailto:sre@transposit.com) so that they can run the `sre-scripts/sandbox.py` management script
 
-## GitHub Repository Access
+## GitHub
 * [Transposit](https://www.transposit.com) uses [GitHub](https://www.github.com) for `source code management / SCM`
 * * If the employee already has an active [GitHub](https://www.github.com) account they would like to use, [add that user](https://console.transposit.com/mc/t/transposit/actions/add_github_user_to_transposit) to the [Transposit](https://www.github.com/transposit) organization
 * * * If the employee does not have an active [GitHub](https://www.github.com) account, [create one](https://console.transposit.com/mc/t/transposit/actions/create_github_user) for them
 * * [Add the employee to the appropriate groups](https://console.transposit.com/mc/t/transposit/actions/add_github_user_to_groups) for necessary permissions
 
-## Slack Access
+## Slack
 * [Transposit](https://www.transposit.com) uses [Slack](https://www.slack.com) for team communication
 * * Using the email address previously created, [invite the employee](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_slack) to [Slack](https://www.slack.com)
 * * [Add the employee](https://console.transposit.com/mc/t/transposit/actions/add_slack_user_to_channels) to appropriate [Slack](https://www.slack.com) channels
 
-## Confluence Access
+## Confluence
 * [Transposit](https://www.transposit.com) uses [Atlassian's hosted Confluence](https://www.atlassian.com/software/confluence) application for Documentation
 * * Using the email address previously created, [invite the employee](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_confluence) to [Confluence](https://www.atlassian.com/software/confluence)
 * * [Provide links](https://console.transposit.com/mc/t/transposit/actions/send_confluence_links) to machine setup, company values, OpsGenie notification setup, Accessing AWS / Sandbox
 
-## Jira Access
+## Jira
 * [Transposit](https://www.transposit.com) uses [Atlassian's hosted Jira](https://www.atlassian.com/software/jira) application for bug tracking, issue tracking, and project management.
 * * Using the email address previously created, [invite the employee](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_jira) to [Jira](https://www.atlassian.com/software/jira)
 * * [Assign a ticket](https://console.transposit.com/mc/t/transposit/actions/assign_jira_ticket_for_onboarding) in [Jira](https://www.atlassian.com/software/jira) to the employee to track machine setup and other questions the employee might have
