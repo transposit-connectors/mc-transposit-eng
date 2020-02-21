@@ -19,9 +19,10 @@ Some things to keep in mind:
 
 
 ## Add Email Aliases if Applicable
-The new employee might ask to [create an alias](https://console.transposit.com/mc/t/transposit/actions/add_transposit_email_alias), such as first initial, last name - or a nickname
+[Create Email Alias](https://console.transposit.com/mc/t/transposit/actions/add_transposit_email_alias)
+- The new employee might ask to create an email alias such as first initial, last name - or a nickname
 
-For example, `josh@transposit.com` could be the main account, with `jfraser@transposit.com` and `jfray@transposit.com` as aliases
+- For example, `josh@transposit.com` could be the main account, with `jfraser@transposit.com` and `jfray@transposit.com` as aliases
 
 ## Google Groups
 [Transposit](https://www.transposit.com) uses [Google Groups](https://support.google.com/a/users/answer/9304805?hl=en) for distribution lists, with the added benefit of searching archived threads
