@@ -50,7 +50,7 @@ When a new engineer starts at Transposit, there are several accounts and configu
 
 - Transposit uses Slack for real-time team communication
 
-- Adding the engineer to the appropriate channels provides immediate access to important and pertient conversations.
+- Adding the engineer to the appropriate channels provides immediate access to important and relevant conversations.
 
 ## Confluence
 [Invite to Confluence](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_confluence)
