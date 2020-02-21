@@ -16,7 +16,7 @@ Some things to keep in mind:
 
 _At some point in the future, this may change due to company size and availability_
 
-Create Email Address(https://console.transposit.com/mc/t/transposit/actions/create_transposit_email)
+[Create Email Address](https://console.transposit.com/mc/t/transposit/actions/create_transposit_email)
 
 ## Add Email Aliases if Applicable
 The new employee might ask to [create an alias](https://console.transposit.com/mc/t/transposit/actions/add_transposit_email_alias), such as first initial, last name - or a nickname
