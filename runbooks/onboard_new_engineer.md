@@ -31,11 +31,10 @@ Some things to keep in mind:
 - Inviting the new employee to the appropriate Google Groups provides them with access to previous conversations and context as to how decisions were made
 
 ## HR Tasks
-[Transposit](https://www.transposit.com) uses [Ease](https://www.ease.com) to manage benefits, discretionary time off, and other HR-related functions
+[Invite to Ease](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_ease)
+- Transposit uses Ease to manage benefits, discretionary time off, and other HR-related functions
 
-  Using the email address previously created, [invite the employee to Ease](https://www.transposit.com)
-
-The [HR representative](mailto:hr@transposit.com) will have the new employee fill out their employment and benefits paperwork
+- The [HR representative](mailto:hr@transposit.com) will have the new employee fill out their employment and benefits paperwork
 
 ## Create AWS IAM User
 [Transposit](https://www.transposit.com) is hosted by [Amazon Web Services / AWS](https://aws.amazon.com)
