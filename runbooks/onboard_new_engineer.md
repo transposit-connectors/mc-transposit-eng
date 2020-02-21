@@ -72,11 +72,12 @@ Some things to keep in mind:
 - Links to documentation for machine setup, company values, OpsGenie notification setup, Accessing AWS / Sandbox will be sent to the new engineer
 
 ## Jira Access
-[Transposit](https://www.transposit.com) uses [Atlassian's hosted Jira](https://www.atlassian.com/software/jira) application for bug tracking, issue tracking, and project management.
+[Invite to Jira](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_jira)
+[Assign Onboard Ticket](https://console.transposit.com/mc/t/transposit/actions/assign_jira_ticket_for_onboarding)
 
-  Using the email address previously created, [invite the employee](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_jira) to [Jira](https://www.atlassian.com/software/jira)
+- Transposit uses Atlassian's hosted Jira application for bug tracking, issue tracking, and project management
 
-  [Assign a ticket](https://console.transposit.com/mc/t/transposit/actions/assign_jira_ticket_for_onboarding) in [Jira](https://www.atlassian.com/software/jira) to the employee to track machine setup and other questions the employee might have
+- Assigning a ticket to the employee tracking their machine setup validates that they can use the ticketing system and provides a simple path for asking setup questions
 
 ## OpsGenie
 [Transposit](https://www.transposit.com) uses [Atlassian's hosted OpsGenie](https://www.atlassian.com/software/opsgenie) application to manage alert notification and on-call schedules
