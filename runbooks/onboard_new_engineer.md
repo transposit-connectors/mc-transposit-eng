@@ -73,22 +73,20 @@ Some things to keep in mind:
 
 ## Jira
 [Invite to Jira](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_jira)
-[Assign Onboard Ticket](https://console.transposit.com/mc/t/transposit/actions/assign_jira_ticket_for_onboarding)
+[Assign Onboarding Ticket](https://console.transposit.com/mc/t/transposit/actions/assign_jira_ticket_for_onboarding)
 
 - Transposit uses Atlassian's hosted Jira application for bug tracking, issue tracking, and project management
 
 - Assigning a ticket to the employee tracking their machine setup validates that they can use the ticketing system and provides a simple path for asking setup questions
 
 ## OpsGenie
-[Transposit](https://www.transposit.com) uses [Atlassian's hosted OpsGenie](https://www.atlassian.com/software/opsgenie) application to manage alert notification and on-call schedules
+[Invite to OpsGenie](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_opsgenie)
+[Send Download Links](https://console.transposit.com/mc/t/transposit/actions/send_opsgenie_download_links)
+[Send Test Alert](https://console.transposit.com/mc/t/transposit/actions/send_opsgenie_test_notification)
 
-Using the email address prevoiusly created, [invite the employee](https://console.transposit.com/mc/t/transposit/actions/invite_user_to_opsgenie) to [OpsGenie](https://www.atlassian.com/software/opsgenie)
+- Transposit uses Atlassian's hosted OpsGenie application to manage alert notification and on-call schedules
 
-  [Send a link](https://console.transposit.com/mc/t/transposit/actions/send_opsgenie_download_links) to download the [OpsGenie](https://www.atlassian.com/software/opsgenie) mobile application
+- The engineer should download a mobile client by following the links you've sent
 
-    [Android](https://play.google.com/store/apps/details?id=com.ifountain.opsgenie&hl=en_US)
-
-    [iOS](https://apps.apple.com/us/app/opsgenie/id528590328)
-
-  [Send a test notification](https://console.transposit.com/mc/t/transposit/actions/send_opsgenie_test_notification) to make sure the employee has configured their application correctly
+- Once the engineer has configured their client, sending a test notification validates that their configuration has been set up correctly
 
