@@ -37,11 +37,12 @@ Some things to keep in mind:
 - The [HR representative](mailto:hr@transposit.com) will have the new employee fill out their employment and benefits paperwork
 
 ## Create AWS IAM User
-[Transposit](https://www.transposit.com) is hosted by [Amazon Web Services / AWS](https://aws.amazon.com)
+[Create IAM user](https://console.transposit.com/mc/t/transposit/actions/create_iam_user)
 
-Each engineer is provided an AWS user, which is managed by their [Identity and Access Management / IAM](https://www.amazonaws.cn/en/iam/) service
+- Transposit is hosted by Amazon Web Services / AWS
 
-  Using the username from the email step, [create an IAM user](https://console.transposit.com/mc/t/transposit/actions/create_iam_user)
+- Each engineer is provided an AWS user, which is managed by their Identity and Access Management / IAM service
+
 
 Each engineer is provided an [AWS development sandbox](https://transposit.atlassian.net/wiki/spaces/DEV/pages/310706177/Sandbox+AWS+Accounts) to develop, test, and deploy code
 
