@@ -1,3 +1,3 @@
 name: Add an email alias for tranpsosit.com
 description: Adds an transposit.com email alias
-workflow: changeme
+workflow: transposit/test_josh:latest

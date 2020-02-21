@@ -1,3 +1,3 @@
 name: Add GitHub User to Groups
 description: Add existing GitHub user to necessary groups for permissions
-workflow: changeme
+workflow: transposit/test_josh:latest

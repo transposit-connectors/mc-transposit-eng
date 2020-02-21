@@ -1,3 +1,3 @@
 name: Assign Jira Ticket for Onboarding
 description: Assign the user a Jira ticket that tracks the user's onboarding progress
-workflow: changeme
+workflow: transposit/test_josh:latest
