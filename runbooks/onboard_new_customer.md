@@ -3,7 +3,7 @@
 Sarah stole this from https://docs.google.com/document/d/1Ryy2O6Se8gSuqwEESfobB8qucY-L_G8N5B_PExkg-Ng/edit
 
 ## Create a new org for them
-https://console.transposit.com/mc
+https://console.transposit.com/mc/teams/new
 
 Add their users to the org as an owner
 
