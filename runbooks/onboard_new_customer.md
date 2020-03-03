@@ -4,6 +4,7 @@ Sarah stole this from https://docs.google.com/document/d/1Ryy2O6Se8gSuqwEESfobB8
 
 ## Create a new org for them
 https://console.transposit.com/mc
+
 Add their users to the org as an owner
 
 ## Add the org to the following feature flags in dynamic configuration:
