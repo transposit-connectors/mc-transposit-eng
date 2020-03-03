@@ -1,3 +1,0 @@
-name: action1
-description: Looks at ELB Logs
-workflow: transposit/mc_workflow:latest
