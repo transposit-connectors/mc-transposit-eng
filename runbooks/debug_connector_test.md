@@ -25,4 +25,4 @@ Possible causes are:
 1. We updated a connector and it caused the test to break
 2. The api for the connector chnaged and we need to update the connector
 
-You can try to debug the connector yourself or [Create a Jira and assign it to Daisie](https://console.transposit.com/mc/t/transposit-eng/actions/create_jira_for_daisie)
+You can try to debug the connector yourself or [Create a Jira for Daisie](https://console.transposit.com/mc/t/transposit-eng/actions/create_jira_for_daisie)
