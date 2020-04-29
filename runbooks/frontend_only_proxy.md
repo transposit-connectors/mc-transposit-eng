@@ -8,21 +8,22 @@ Drag and drop `proxy/frontend_only_certs/fullchain.pem` into the keychain access
 ## Remap the s3 bucket that serves the static assets to localhost
 Add the following to /etc/hosts
 
-
 `127.0.0.1  s3-us-west-2.amazonaws.com`
 
 *You may need to restart chrome to nuke caches when when you toggle on/off the host*
 
-## Build docker
-docker-compose -f docker/frontend_only/dev.yml build
+## Build and run docker
 
-## Run docker
-If you hit production, chrome often caches such that if you switch back your /etc/hosts, it doesn't take effect unless you restart chrome. So my work around is to always have /etc/hosts redirect the s3 bucket to my server, and then I have 2 proxy configs, one that passes everything through, and another that passes demo -> dev.
-docker-compose -f docker/frontend_only/dev.yml up
+Build docker one time. You probably don't need to do this often.
 
+`docker-compose -f docker/frontend_only/dev.yml build`
+
+Run docker
+
+`docker-compose -f docker/frontend_only/dev.yml up`
 
 ## Download mc artifacts from CircleCI
-So you probably only need to download these artifacts once unless something major changes on the frontend.
+You probably only need to download and install these artifacts once unless something major changes on the frontend.
 
 Go to [CircleCI](https://circleci.com/gh/transposit)
 In the upper right, go to User Settings -> Personal API Tokens
@@ -36,27 +37,30 @@ Download artifacts from CircleCI
 cd scripts
 ./downloadFrontendOnlyArtifacts.sh transposit/transposit $CIRCLE_CI_BUILD_NUMBER
 
-These will output a bunch of artifacts in /tmp/<CIRCLE_CI_BUILD_NUMBER>
+These will output a bunch of artifacts in */tmp/<CIRCLE_CI_BUILD_NUMBER>*
 
-## Install those artifacts
-cd javascript/mc
+## Install those artifacts and run the frontend
+From the _javascript/mc_ directory:
+
 `npm install /tmp/$CIRCLE_CI_BUILD_NUMBER/0/javascript/graphql/target/transposit-graphql`
 `npm install /tmp/$CIRCLE_CI_BUILD_NUMBER/0/javascript/typescript-web-api/target/transposit-mc-api/`
 
-## Run the mc frontend
-cd javascript/mc
-yarn start
+`yarn start`
 
-## Visit the site and see your changes
-https://console.demo.transposit.com
+## See it work!
 
-## Prod passthrough
-I haven't yet figured out the story with chrome caching. So I created a prod passthrough for the docker conf so that I could switch back and forth to prod without restarting chrome.
+Go to [Prod](https://console.transposit.com), [staging](https://console.staging.transposit.com), or [demo](https://console.demo.transposit.com)
+
+## Chrome caching and debugging
+
+If you hit production, chrome often caches such that if you switch back your /etc/hosts, it doesn't take effect unless you restart chrome. So my work around is to always have /etc/hosts redirect the s3 bucket to my server, and then I have 2 proxy configs, one that passes everything through, and another that passes demo -> dev.
+
+Here's how you can run my prod passthrough
+
 `docker-compose -f docker/frontend_only/prod.yml up`
 
-## Other debugging notes
+How can you tell which version you are hitting?
 
-- Is my proxy working?
-Go to your network tab in Chrome and find one of the mc bundle files. It will look something like: https://s3-us-west-2.amazonaws.com/prod.static.transposit.com/mc.8a5302e6b515f3791d80.bundle.js
+Go to your network tab in Chrome and find one of the mc bundle files. It will look something like: *https://s3-us-west-2.amazonaws.com/prod.static.transposit.com/mc.8a5302e6b515f3791d80.bundle.js*
 
 If you get a minimized js file, you are hitting prod. If not, you are hitting your dev environment. Toggle your docker from prod to dev to see how it changes.
