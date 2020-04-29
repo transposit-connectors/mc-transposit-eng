@@ -47,10 +47,12 @@ In the upper right, go to User Settings -> Personal API Tokens
 *You can use latest for your build number
 
 Download artifacts from CircleCI
-cd scripts
-./downloadFrontendOnlyArtifacts.sh transposit/transposit $CIRCLE_CI_BUILD_NUMBER
 
-These will output a bunch of artifacts in */tmp/<CIRCLE_CI_BUILD_NUMBER>*
+`cd scripts`
+
+`./downloadFrontendOnlyArtifacts.sh transposit/transposit $CIRCLE_CI_BUILD_NUMBER`
+
+*Note: these will output a bunch of artifacts in /tmp/<CIRCLE_CI_BUILD_NUMBER>*
 
 ## Install those artifacts and run the frontend
 From the _javascript/mc_ directory:
