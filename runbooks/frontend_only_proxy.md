@@ -47,6 +47,7 @@ From the _javascript/mc_ directory:
 `npm install /tmp/$CIRCLE_CI_BUILD_NUMBER/0/javascript/typescript-web-api/target/transposit-mc-api/`
 
 And then run the frontend:
+
 `yarn start`
 
 ## See it work!
