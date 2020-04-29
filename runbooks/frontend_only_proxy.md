@@ -64,6 +64,6 @@ Here's how you can run my prod passthrough
 
 How can you tell which version you are hitting?
 
-Go to your network tab in Chrome and find one of the mc bundle files. It will look something like: *https://s3-us-west-2.amazonaws.com/prod.static.transposit.com/mc.8a5302e6b515f3791d80.bundle.js*
+Go to your network tab in Chrome and find one of the mc bundle files. It will look something like: `https://s3-us-west-2.amazonaws.com/prod.static.transposit.com/mc.8a5302e6b515f3791d80.bundle.js`
 
 If you get a minimized js file, you are hitting prod. If not, you are hitting your dev environment. Toggle your docker from prod to dev to see how it changes.
