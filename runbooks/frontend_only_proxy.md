@@ -4,6 +4,8 @@ This setup is meant to be a minimal setup that allows you to run only the mc fro
 ## Pre-reqs
 The goal of this setup is so that you don't need to have a full development setup on your laptop to build and run the frontend. However, you will need to do a subset of the [Getting Started](https://transposit.atlassian.net/wiki/spaces/DEV/pages/15400961/Getting+Started) wiki.
 
+You need to have a copy of our [source repo](https://github.com/transposit/transposit).
+
 Packages from brew:
 - jq
 - yarn
