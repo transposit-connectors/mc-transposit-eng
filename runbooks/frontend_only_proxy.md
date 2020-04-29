@@ -1,23 +1,60 @@
 # Frontend-only Proxy
 
-The top first-level heading becomes the runbook title. A paragraph immediately following the title is the runbook description.
+This setup is meant to be a minimal setup that allows you to run only the mc frontend.
 
-## Step 1
+## Get OSX to trust your cert
+Drag and drop proxy/frontend_only_certs/fullchain.pem into the keychain access app. Click on the cert, expand the Trust section, and set to Always Trust
 
-Runbook steps are defined by second-level headings. Text following a second-level heading, like this, describes and contains information about a runbook step.
+## Remap the s3 bucket that serves the static assets to localhost
+Add the following to /etc/hosts
+127.0.0.1  s3-us-west-2.amazonaws.com
 
-Click on **Add action** above to insert a URL pointing to an action. These are just Markdown links, but are rendered as buttons inside Slack, and when clicked, will run the action.
+*You may need to restart chrome to nuke caches when when you toggle on/off the host*
 
-You can use `Markdown` *formatting* and [the usual syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), but be aware some formatting and some Markdown features, including tables, images, and inline HTML, won't be displayed when viewing a runbook inside Slack.
+## Build docker
+docker-compose -f docker/frontend_only/dev.yml build
 
-## Step 2
+## Run docker
+If you hit production, chrome often caches such that if you switch back your /etc/hosts, it doesn't take effect unless you restart chrome. So my work around is to always have /etc/hosts redirect the s3 bucket to my server, and then I have 2 proxy configs, one that passes everything through, and another that passes demo -> dev.
+docker-compose -f docker/frontend_only/dev.yml up
 
-Each second-level heading defines a separate step. The runbook's table of contents is made up of each of the runbook's steps.
 
-### Third-level headings like this are treated as headings only
+## Download mc artifacts from CircleCI
+So you probably only need to download these artifacts once unless something major changes on the frontend.
 
-To divide information within a step, you can use a third-level heading.
+Go to [CircleCI](https://circleci.com/gh/transposit)
+In the upper right, go to User Settings -> Personal API Tokens
+- Create a new token
+- In your terminal, run
+`export CIRCLE_API_TOKEN='<TOKEN>'`
+`export CIRCLE_CI_BUILD_NUMBER='<BUILD_NUMBER>'`
+*You can use latest for your build number
 
-## Step 3
+Download artifacts from CircleCI
+cd scripts
+./downloadFrontendOnlyArtifacts.sh transposit/transposit $CIRCLE_CI_BUILD_NUMBER
 
-And that's how runbooks are made. Happy runbooking!
+These will output a bunch of artifacts in /tmp/<CIRCLE_CI_BUILD_NUMBER>
+
+## Install those artifacts
+cd javascript/mc
+`npm install /tmp/$CIRCLE_CI_BUILD_NUMBER/0/javascript/graphql/target/transposit-graphql`
+`npm install /tmp/$CIRCLE_CI_BUILD_NUMBER/0/javascript/typescript-web-api/target/transposit-mc-api/`
+
+## Run the mc frontend
+cd javascript/mc
+yarn start
+
+## Visit the site and see your changes
+https://console.demo.transposit.com
+
+## Prod passthrough
+I haven't yet figured out the story with chrome caching. So I created a prod passthrough for the docker conf so that I could switch back and forth to prod without restarting chrome.
+`docker-compose -f docker/frontend_only/prod.yml up`
+
+## Other debugging notes
+
+- Is my proxy working?
+Go to your network tab in Chrome and find one of the mc bundle files. It will look something like: https://s3-us-west-2.amazonaws.com/prod.static.transposit.com/mc.8a5302e6b515f3791d80.bundle.js
+
+If you get a minimized js file, you are hitting prod. If not, you are hitting your dev environment. Toggle your docker from prod to dev to see how it changes.
