@@ -1,5 +1,4 @@
 # Frontend-only Proxy
-
 This setup is meant to be a minimal setup that allows you to run only the mc frontend.
 
 ## Pre-reqs
