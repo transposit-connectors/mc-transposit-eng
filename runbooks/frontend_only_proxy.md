@@ -3,7 +3,7 @@
 This setup is meant to be a minimal setup that allows you to run only the mc frontend.
 
 ## Get OSX to trust your cert
-Drag and drop proxy/frontend_only_certs/fullchain.pem into the keychain access app. Click on the cert, expand the Trust section, and set to Always Trust
+Drag and drop `proxy/frontend_only_certs/fullchain.pem` into the keychain access app. Click on the cert, expand the Trust section, and set to Always Trust
 
 ## Remap the s3 bucket that serves the static assets to localhost
 Add the following to /etc/hosts
