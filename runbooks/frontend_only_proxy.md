@@ -52,7 +52,7 @@ And then run the frontend:
 
 ## See it work!
 
-Go to [Prod](https://console.transposit.com), [staging](https://console.staging.transposit.com), or [demo](https://console.demo.transposit.com)
+Go to [prod](https://console.transposit.com), [staging](https://console.staging.transposit.com), or [demo](https://console.demo.transposit.com)
 
 ## Chrome caching and debugging
 
