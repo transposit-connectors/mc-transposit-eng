@@ -7,7 +7,7 @@ Drag and drop `proxy/frontend_only_certs/fullchain.pem` into the keychain access
 
 ## Remap the s3 bucket that serves the static assets to localhost
 Add the following to /etc/hosts
-127.0.0.1  s3-us-west-2.amazonaws.com
+`127.0.0.1  s3-us-west-2.amazonaws.com`
 
 *You may need to restart chrome to nuke caches when when you toggle on/off the host*
 
