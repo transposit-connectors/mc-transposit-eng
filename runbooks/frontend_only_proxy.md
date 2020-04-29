@@ -2,8 +2,20 @@
 
 This setup is meant to be a minimal setup that allows you to run only the mc frontend.
 
-## Get OSX to trust your cert
-Drag and drop `proxy/frontend_only_certs/fullchain.pem` into the keychain access app. Click on the cert, expand the Trust section, and set to Always Trust
+## Pre-reqs
+The goal of this setup is so that you don't need to have a full development setup on your laptop to build and run the frontend. However, you will need to do a subset of the [Getting Started](https://transposit.atlassian.net/wiki/spaces/DEV/pages/15400961/Getting+Started) wiki.
+
+Packages from brew:
+- jq
+- yarn
+- node
+
+Docker via Homebrew is pretty confusing.  Easiest to grab the package from the [site](https://www.docker.com/docker-mac).
+
+You will also need access to Transposit's CircleCI build, which you should have if you have a Transposit Github account.
+
+## Install Certs
+You need to get OSX to trust our proxy's self-signed certs. Drag and drop `proxy/frontend_only_certs/fullchain.pem` into the keychain access app. Click on the cert, expand the Trust section, and set to Always Trust
 
 ## Remap the s3 bucket that serves the static assets to localhost
 Add the following to /etc/hosts
