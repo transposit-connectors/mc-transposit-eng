@@ -38,8 +38,8 @@ Run docker
 ## Download mc artifacts from CircleCI
 You probably only need to download and install these artifacts once unless something major changes on the frontend.
 
-Go to [CircleCI](https://circleci.com/gh/transposit)
-In the upper right, go to User Settings -> Personal API Tokens
+Go to [CircleCI](https://app.circleci.com/settings/user/tokens)
+In the bottom left, go to User Settings -> Personal API Tokens
 - Create a new token
 - In your terminal, run
 `export CIRCLE_API_TOKEN='<TOKEN>'`
