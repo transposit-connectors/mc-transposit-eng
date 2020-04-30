@@ -16,7 +16,7 @@ Docker via Homebrew is pretty confusing.  Easiest to grab the package from the [
 You will also need access to Transposit's CircleCI build, which you should have if you have a Transposit Github account.
 
 ## Install Certs
-You need to get OSX to trust our proxy's self-signed certs. Drag and drop `proxy/frontend_only_certs/fullchain.pem` into the keychain access app. Click on the `s3-us-west-2.amazonaws.com` cert, expand the Trust section, and set to Always Trust
+You need to get OSX to trust our proxy's self-signed certs. Drag and drop `proxy/frontend_only_certs/fullchain.pem` onto the keychain access app to import it. Then click on the `s3-us-west-2.amazonaws.com` cert, expand the Trust section, and set to Always Trust
 
 ## Remap the s3 bucket that serves the static assets to localhost
 Add the following to /etc/hosts
@@ -66,6 +66,8 @@ And then run the frontend:
 `yarn start`
 
 ## Install those artifacts and run the frontend (Sarah's notes)
+This avoids changing package.json and its lock file
+
 From the _javascript/mc_ directory:
 
 ```
