@@ -65,6 +65,18 @@ And then run the frontend:
 
 `yarn start`
 
+## Install those artifacts and run the frontend (Sarah's notes)
+From the _javascript/mc_ directory:
+
+```
+mkdir -p ../graphql/target/transposit-graphql
+cp -r /tmp/$CIRCLE_CI_BUILD_NUMBER/0/javascript/graphql/target/transposit-graphql/ ../graphql/target/transposit-graphql
+mkdir -p ../typescript-web-api/target/transposit-mc-api
+cp -r /tmp/$CIRCLE_CI_BUILD_NUMBER/0/javascript/typescript-web-api/target/transposit-mc-api/ ../typescript-web-api/target/transposit-mc-api 
+yarn
+yarn start
+```
+
 ## See it work!
 
 Go to [prod](https://console.transposit.com), [staging](https://console.staging.transposit.com), or [demo](https://console.demo.transposit.com)
