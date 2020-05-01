@@ -23,7 +23,7 @@ Add the following to /etc/hosts
 
 `127.0.0.1  s3-us-west-2.amazonaws.com`
 
-*You may need to restart chrome to nuke caches when when you toggle on/off the host*
+Reset the Chrome cache by going to the following page `chrome://net-internals/#dns`
 
 ## Build and run docker
 
