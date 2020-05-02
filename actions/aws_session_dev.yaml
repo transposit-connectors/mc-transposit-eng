@@ -1,0 +1,4 @@
+---
+description: "Helper to get AWS environment variables for develoment-admin"
+workflow: "transposit-eng/sts_workflow:v0.0.1"
+prettyName: "AWS Session (dev)"
