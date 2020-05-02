@@ -4,6 +4,9 @@ This runbook is to help out with some handy notes on how we use AWS roles and MF
 
 ## Setting environment variables
 
+Create an AWS session for given roles. These actions print out handy environment variables for you to copy/paste into console.
+
+[AWS Session (dev)](https://console.transposit.com/mc/t/transposit-eng/actions/aws_session_dev)
 
 ## AWS CLI as_session
 
