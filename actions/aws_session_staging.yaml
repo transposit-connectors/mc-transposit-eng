@@ -1,3 +1,4 @@
 ---
+description: "Helper to get AWS environment variables for staging-admin"
 workflow: "transposit-eng/sts_workflow:latest"
 prettyName: "AWS Session (staging)"
