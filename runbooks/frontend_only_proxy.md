@@ -39,7 +39,7 @@ Run docker
 You probably only need to download and install these artifacts once unless something major changes on the frontend.
 
 Go to [CircleCI](https://app.circleci.com/settings/user/tokens)
-In the bottom left, go to User Settings -> Personal API Tokens
+In the bottom left, go to User Settings -> Personal API Tokens (this somewhat depends on your CircleCI version)
 - Create a new token
 - In your terminal, run
 `export CIRCLE_API_TOKEN='<TOKEN>'`
@@ -82,14 +82,6 @@ yarn start
 ## See it work!
 
 Go to [prod](https://console.transposit.com), [staging](https://console.staging.transposit.com), or [demo](https://console.demo.transposit.com)
-
-## Chrome caching and debugging
-
-If you hit production, chrome often caches such that if you switch back your /etc/hosts, it doesn't take effect unless you restart chrome. So my work around is to always have /etc/hosts redirect the s3 bucket to my server, and then I have 2 proxy configs, one that passes everything through, and another that passes demo -> dev.
-
-Here's how you can run my prod passthrough
-
-`docker-compose -f docker/frontend_only/prod.yml up`
 
 How can you tell which version you are hitting?
 
