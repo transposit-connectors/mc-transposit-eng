@@ -16,7 +16,7 @@ Docker via Homebrew is pretty confusing.  Easiest to grab the package from the [
 You will also need access to Transposit's CircleCI build, which you should have if you have a Transposit Github account.
 
 ## Grab the Certs
-Copy the [frontend_only_certs](https://drive.google.com/drive/folders/102UD3jYLk1560_KN_skJoZDWREVcKWls) directory to the `proxy` directory in the transposit repo.
+Copy the `[frontend_only_certs](https://drive.google.com/drive/folders/102UD3jYLk1560_KN_skJoZDWREVcKWls)` directory to the `transposit/proxy`.
 
 ## Install Certs
 You need to get OSX to trust our proxy's self-signed certs. Drag and drop `proxy/frontend_only_certs/fullchain.pem` onto the keychain access app to import it. Then click on the `s3-us-west-2.amazonaws.com` cert, expand the Trust section, and set to Always Trust
