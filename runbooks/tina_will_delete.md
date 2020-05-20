@@ -14,7 +14,7 @@ Welcome to Split! This article will walk through setting up your split instance,
 
 For additional information or to dive right into reference docs, explore our help center to find feature reference guides, best practices, video walkthroughs and frequently asked questions.
 
-- Install: Learn how to install Split’s SDKs to control feature flags in your application [here](https://help.split.io/hc/en-us/categories/360001534111-Install)
+- Install: [Learn](https://help.split.io/hc/en-us/categories/360001534111-Install) how to install Split’s SDKs to control feature flags in your application
 
 - Administer: Learn about managing and maintaining your account and users [here](https://help.split.io/hc/en-us/categories/360001534151-Administer)
 
