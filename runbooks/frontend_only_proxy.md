@@ -28,7 +28,7 @@ Add the following to /etc/hosts
 
 `127.0.0.1  s3-us-west-2.amazonaws.com`
 
-Reset the Chrome cache by going to the following page `chrome://net-internals/#dns`
+Chrome seems to not always respect the [hosts entry](https://html.developreference.com/article/11853800/Chrome+not+respecting+hosts+file+entry). So you may need to jump through a few hoops if you go back and forth between dev and prod on a particular environment. For me usually restarting Chrome is involved.
 
 ## Build and run docker
 
