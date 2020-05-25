@@ -49,6 +49,7 @@ Go to [CircleCI](https://app.circleci.com/settings/user/tokens) and create a new
 
 Download artifacts from CircleCI
 
+[circleci_graphql_artifact](https://console.transposit.com/mc/t/transposit-eng/actions/circleci_graphql_artifact)
 `cd scripts`
 
 `./downloadFrontendOnlyArtifacts.sh`
