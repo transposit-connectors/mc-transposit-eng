@@ -1,3 +1,4 @@
 ---
+description: "Helper to get the stored artifacts for the frontend proxy from CircleCI"
 workflow: "transposit-eng/circleci_artifacts:latest"
-prettyName: "circleci_graphql_artifact"
+prettyName: "frontend_proxy_artifacts"
