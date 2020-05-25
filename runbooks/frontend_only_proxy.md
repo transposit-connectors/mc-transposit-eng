@@ -41,44 +41,24 @@ Run docker
 `docker-compose -f docker/frontend_only/dev.yml up`
 
 ## Download mc artifacts from CircleCI
-You only need to download and install these artifacts when something major changes on the frontend.
 
-Go to [CircleCI](https://app.circleci.com/settings/user/tokens) and create a new API token.
+Download artifacts from CircleCI. You only need to update these artifacts when something major changes on the frontend.
 
-`export CIRCLE_API_TOKEN='<TOKEN>'`
+[Get artifacts](https://console.transposit.com/mc/t/transposit-eng/actions/circleci_graphql_artifact)
 
-Download artifacts from CircleCI
+## Decompress those artifacts
 
-[circleci_graphql_artifact](https://console.transposit.com/mc/t/transposit-eng/actions/circleci_graphql_artifact)
-`cd scripts`
-
-`./downloadFrontendOnlyArtifacts.sh`
-
-*If you want to customize the build number, you can use pass in the build number as an argument*
+You should have 2 downloaded tar files in your `~/Downloads` directory. Double click those 2 files.
 
 ## Install those artifacts and run the frontend
-From the _javascript/mc_ directory:
-
-`npm install /tmp/$CIRCLE_CI_BUILD_NUMBER/0/javascript/graphql/target/transposit-graphql`
-
-`npm install /tmp/$CIRCLE_CI_BUILD_NUMBER/0/javascript/typescript-web-api/target/transposit-mc-api/`
-
-`npm install`
-
-And then run the frontend:
-
-`yarn start`
-
-## Install those artifacts and run the frontend (Sarah's notes)
-This avoids changing package.json and its lock file
 
 From the _javascript/mc_ directory:
 
 ```
 mkdir -p ../graphql/target/transposit-graphql
-cp -r /tmp/$CIRCLE_CI_BUILD_NUMBER/0/javascript/graphql/target/transposit-graphql/ ../graphql/target/transposit-graphql
+cp -r ~/Downloads/transposit-graphql/ ../graphql/target/transposit-graphql
 mkdir -p ../typescript-web-api/target/transposit-mc-api
-cp -r /tmp/$CIRCLE_CI_BUILD_NUMBER/0/javascript/typescript-web-api/target/transposit-mc-api/ ../typescript-web-api/target/transposit-mc-api 
+cp -r ~/Downloads/transposit-mc-api/ ../typescript-web-api/target/transposit-mc-api 
 yarn
 yarn start
 ```
