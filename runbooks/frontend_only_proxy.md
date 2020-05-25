@@ -16,7 +16,7 @@ Docker via Homebrew is pretty confusing.  Easiest to grab the package from the [
 You will also need access to Transposit's CircleCI build, which you should have if you have a Transposit Github account.
 
 ## Grab the Certs
-Grab the `frontend_only_certs` directory form [Google Drive](https://drive.google.com/drive/folders/102UD3jYLk1560_KN_skJoZDWREVcKWls). Copy it to `transposit/proxy` (in your copy of the source repo).
+Grab the `frontend_only_certs` directory form [Google Drive](https://drive.google.com/drive/folders/102UD3jYLk1560_KN_skJoZDWREVcKWls). Unzip the file and copy it to `transposit/proxy` (in your copy of the source repo).
 
 _The cert expiration is 1 year. If it expires, follow the instructions in the README.md in the Drive directory_
 
