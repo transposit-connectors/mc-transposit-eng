@@ -18,7 +18,7 @@ You will also need access to Transposit's CircleCI build, which you should have 
 Grab the `frontend_only_certs` directory form [Google Drive](https://drive.google.com/drive/folders/102UD3jYLk1560_KN_skJoZDWREVcKWls). Copy it to `transposit/proxy` (in your copy of the source repo).
 
 ## Install Certs
-You need to get OSX to trust our proxy's self-signed certs. Drag and drop `proxy/frontend_only_certs/fullchain.pem` onto the keychain access app to import it. Then click on the `s3-us-west-2.amazonaws.com` cert, expand the Trust section, and set to Always Trust
+You need to get OSX to trust our proxy's self-signed certs. Drag and drop `proxy/frontend_only_certs/fullchain.pem` onto the keychain access app to import it (the login keychain is fine). Then double click on the newly added `s3-us-west-2.amazonaws.com` cert, expand the Trust section, and set to *Always Trust*
 
 ## Remap the s3 bucket that serves the static assets to localhost
 Add the following to /etc/hosts
