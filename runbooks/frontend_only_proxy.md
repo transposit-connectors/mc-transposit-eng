@@ -7,6 +7,7 @@ The goal of this setup is so that you don't need to have a full development setu
 You need to have a copy of our [source repo](https://github.com/transposit/transposit).
 
 Packages from brew:
+- jq
 - yarn
 - node@10
 
@@ -40,15 +41,11 @@ Run docker
 `docker-compose -f docker/frontend_only/dev.yml up`
 
 ## Download mc artifacts from CircleCI
-You probably only need to download and install these artifacts once unless something major changes on the frontend.
+You only need to download and install these artifacts when something major changes on the frontend.
 
-Go to [CircleCI](https://app.circleci.com/settings/user/tokens)
-In the bottom left, go to User Settings -> Personal API Tokens (this somewhat depends on your CircleCI version)
-- Create a new token
-- In your terminal, run
+Go to [CircleCI](https://app.circleci.com/settings/user/tokens) and create a new API token.
+
 `export CIRCLE_API_TOKEN='<TOKEN>'`
-`export CIRCLE_CI_BUILD_NUMBER='<BUILD_NUMBER>'`
-*You can use latest for your build number
 
 Download artifacts from CircleCI
 
@@ -56,7 +53,7 @@ Download artifacts from CircleCI
 
 `./downloadFrontendOnlyArtifacts.sh transposit/transposit $CIRCLE_CI_BUILD_NUMBER`
 
-*Note: these will output a bunch of artifacts in /tmp/<CIRCLE_CI_BUILD_NUMBER>*
+*You can use latest for your build number*
 
 ## Install those artifacts and run the frontend
 From the _javascript/mc_ directory:
