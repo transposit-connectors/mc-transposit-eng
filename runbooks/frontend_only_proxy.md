@@ -7,9 +7,8 @@ The goal of this setup is so that you don't need to have a full development setu
 You need to have a copy of our [source repo](https://github.com/transposit/transposit).
 
 Packages from brew:
-- jq
 - yarn
-- node
+- node@10
 
 Docker via Homebrew is pretty confusing.  Easiest to grab the package from the [site](https://www.docker.com/docker-mac).
 
