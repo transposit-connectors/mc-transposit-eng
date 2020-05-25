@@ -51,9 +51,9 @@ Download artifacts from CircleCI
 
 `cd scripts`
 
-`./downloadFrontendOnlyArtifacts.sh transposit/transposit $CIRCLE_CI_BUILD_NUMBER`
+`./downloadFrontendOnlyArtifacts.sh`
 
-*You can use latest for your build number*
+*If you want to customize the build number, you can use pass in the build number as an argument*
 
 ## Install those artifacts and run the frontend
 From the _javascript/mc_ directory:
