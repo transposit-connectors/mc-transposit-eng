@@ -65,7 +65,7 @@ yarn start
 
 ## See it work!
 
-Go to [prod](https://console.transposit.com), [staging](https://console.staging.transposit.com), or [demo](https://console.demo.transposit.com)
+Go to [demo](https://console.demo.transposit.com) to see it work. It will sometimes work on staging and prod, but you may need different artifacts from CircleCI to get it to work.
 
 How can you tell which version you are hitting?
 
