@@ -1,3 +1,0 @@
-name: Invite User to Slack
-description: Invite user to Transposit Slack
-workflow: transposit/test_josh:latest
