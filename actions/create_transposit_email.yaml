@@ -1,3 +1,0 @@
-name: Create Transposit Email Address 
-description: Creates a transposit.com email address
-workflow: transposit/test_josh:latest
