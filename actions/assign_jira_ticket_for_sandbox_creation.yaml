@@ -1,3 +1,0 @@
-name: Assign Jira Ticket for Sandbox Creation
-description: Assign the user a Jira ticket that tracks the user's sandbox creation
-workflow: transposit/test_josh:latest
