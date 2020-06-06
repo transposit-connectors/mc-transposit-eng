@@ -1,3 +1,0 @@
-name: Add Slack User to Channels
-description: Add existing Slack user to necessary channels
-workflow: transposit/test_josh:latest
