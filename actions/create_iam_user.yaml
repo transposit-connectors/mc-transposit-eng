@@ -1,3 +1,0 @@
-name: Create AWS IAM user
-description: Creates an AWS user using IAM
-workflow: transposit/test_josh:latest
