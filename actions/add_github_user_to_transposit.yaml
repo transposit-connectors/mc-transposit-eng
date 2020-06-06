@@ -1,3 +1,0 @@
-name: Add GitHub User to Transposit Organization
-description: Add existing GitHub user to the Transposit organization so that they have access to source code
-workflow: transposit/test_josh:latest
