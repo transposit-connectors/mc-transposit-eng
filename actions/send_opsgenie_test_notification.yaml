@@ -1,3 +1,0 @@
-name: Send OpsGenie Test Notification
-description: Send user a test notification to make sure their OpsGenie configuration is correct
-workflow: transposit/test_josh:latest
