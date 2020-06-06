@@ -1,3 +1,0 @@
-name: Send OpsGenie Links
-description: Send user download links for OpsGenie mobile application
-workflow: transposit/test_josh:latest
