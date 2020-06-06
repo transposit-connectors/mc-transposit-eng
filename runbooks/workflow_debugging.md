@@ -1,8 +1,6 @@
-# Workflow Debugging
+# Debugging Workflows - MongoDB
 
-How to debug workflows while oncall
-
-## kill_op_in_mongodb and list_current_ops_in_mongodb
+kill_op_in_mongodb and list_current_ops_in_mongodb
 
 ### MongdoDB on Yoko's sandbox
 * Where are the credentials? Can you find out how the user would access their database using the mongo shell command?
