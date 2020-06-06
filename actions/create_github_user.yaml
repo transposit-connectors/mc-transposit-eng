@@ -1,3 +1,0 @@
-name: Create GitHub User
-description: Create new GitHub user
-workflow: transposit/test_josh:latest
