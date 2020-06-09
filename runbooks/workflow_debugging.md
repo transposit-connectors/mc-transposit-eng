@@ -4,8 +4,7 @@ kill_op_in_mongodb and list_current_ops_in_mongodb
 
 ## MongdoDB on Yoko's sandbox
 * Where are the credentials? Can you find out how the user would access their database using the mongo shell command?
-* Differences between Mongo Atlas and Mongo on EC2.
-*     If the database url is a dns hostname (and not an ip address), we attach `+srv` to the connection string (code in the connector) to tell MongoDB to query DNS for the record (more information [here](https://docs.mongodb.com/manual/reference/connection-string/))
+* Differences between Mongo Atlas and Mongo on EC2 - If the database url is a dns hostname (and not an ip address), we attach `+srv` to the connection string (code in the connector) to tell MongoDB to query DNS for the record (more information [here](https://docs.mongodb.com/manual/reference/connection-string/))
 * Yoko has an instance on EC2, where is the link to see that on AWS
 
 ## Debugging the lambda that calls MongoDB
