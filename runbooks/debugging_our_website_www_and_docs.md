@@ -14,4 +14,7 @@ The main entry point within our codebase is `generateAllGlobalServiceMarkdown` w
 
 ## Workflow/Integrator docs
 
+Daisie is the best point of contact for our workflow docs generator. We automatically generate README files for all workflows and integrators in [dynamic_configuration.yml](https://github.com/transposit/transposit/blob/master/java/server/common/src/main/resources/dynamic_configuration.yml). MC Helper has a [sync_documentation](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/op/sync_documentation) operation that regenerates a single README from a workflow's manifest. We have a weekly scheduled task [create_workflow_readmes_pr](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/op/create_workflow_readmes_pr) that generates a new PR in the (workflow-readmes)[https://github.com/transposit/www/tree/workflow-readmes] branch with changes. We manually merge these PRs so that we can have a human sanity check for the website (which sadly lacks sufficient automated testing). Joseph is currently responsible to merge these changes.
 
+Additional help:
+* (Workflow/integrator docs aren't up to date)[https://console.transposit.com/mc/t/transposit-eng/runbooks/public_docs_aren_t_up_to_date]
