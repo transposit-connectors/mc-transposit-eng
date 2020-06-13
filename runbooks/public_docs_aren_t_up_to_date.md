@@ -1,16 +1,27 @@
-# Public docs aren't up to date
+# Workflow/integrator docs aren't up to date
 
-## Workflow/integrator isn't in the public web site
+## Overview
+
+For a high level overview on how our website is put together, visit [this runbook](https://console.transposit.com/mc/t/transposit-eng/runbooks/debugging_our_website_www_and_docs).
+
+## Unmerged docs changes
+
+We run a syncer weekly that creates a PR for new workflow docs changes. If we have stale docs, the first thing to check is if we have an open PR that hasn't yet been merged.
 
 Check to see if there are differences in the working branch: [workflow-readmes](https://github.com/transposit/www/compare/workflow-readmes). If there are changes, there is probably a pending pull request that hasn't been merged. [Go look and see](https://github.com/transposit/www/pulls). If not, use the comparison to manually generate a pull request.
 
 (If there wasn't an open pull request, but there were changes in the working-readmes branch, something might have gone wrong in the mc_helper scheduled task. Let Daisie know if this happened to you.)
 
-Make sure that the version that is at [GitHub](https://github.com/transposit-connectors) looks the way you expect. If so, make sure that that version is published on all the servers:
+## Version is out of date
+
+** MAKING STUFF UP TO THE BEST OF MY UNDERSTANDING **
+The docs are auto-generated from the workflow's manifest data. Start by checking if the workflow's underlying data is correct and that the most recent version has been updated.
+
+Make sure that the version that is at [GitHub](https://github.com/transposit-connectors) looks the way you expect ** NOT FULLY SURE HOW THIS TIES TO DOCS DEBUGGING, SO AGAIN MAKING UP TO THE BEST OF MY UNDERSTANDING**. If so, make sure that that version is published on all the servers:
 
 [Publish from GitHub](https://console.staging.transposit.com/mc/t/transposit-workflows/actions/publish_to_github)
 
-If not, your working copy may need to be synced to GitHub.
+If not, your working copy **FOR NON-WORKFLOW DEVELOPERS/ONCALL ENG, I'M CONFUSED WHAT WORKING COPY? IS THIS GITHUB? DEMO? STAGING?** may need to be synced to GitHub.
 
 (add sync workflow button here)
 
