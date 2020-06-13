@@ -6,7 +6,7 @@ Check to see if there are differences in the working branch: [workflow-readmes](
 
 (If there wasn't an open pull request, but there were changes in the working-readmes branch, something might have gone wrong in the mc_helper scheduled task. Let Daisie know if this happened to you.)
 
-Make sure that the version that is at GitHub looks the way you expect. If so, make sure that that version is published on all the servers:
+Make sure that the version that is at [GitHub](https://github.com/transposit-connectors) looks the way you expect. If so, make sure that that version is published on all the servers:
 
 [Publish from GitHub](https://console.staging.transposit.com/mc/t/transposit-workflows/actions/publish_to_github)
 
