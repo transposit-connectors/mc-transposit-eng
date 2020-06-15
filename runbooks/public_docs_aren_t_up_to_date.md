@@ -16,18 +16,17 @@ Check to see if there are differences in the working branch: [workflow-readmes](
 
 The process we use for releasing workflows/integrators to the public is:
 1. The developer creates/updates a working copy of the service in some working org. For workflow engineers, this is generally the transposit-workflows org on the staging server.
-2. Once the working copy is fully functioning in an action (tested using that working copy's latest version), the developer *syncs the workflow* so that it is available in the transposit org on all servers and in the transposit-connectors repository on GitHub.
+2. Once the working copy is fully functioning in an action (tested using that working copy's latest version), the developer *syncs the workflow* so that it is available in the transposit org on all servers and in the transposit-connectors repository on GitHub. The GitHub version is the source of truth for all public services.
 3. The developer then makes a new release for the public on the GitHub repository. This release then needs to be *deployed on all servers*.
 4. Finally, the new version's documentation changes need to be updated in the public-facing docs. This happens as part of the *publishing workflows* process.
 
-** MAKING STUFF UP TO THE BEST OF MY UNDERSTANDING **
-The docs are auto-generated from the workflow's manifest data. Start by checking if the workflow's underlying data is correct and that the most recent version has been updated.
+Assume that you're looking at some version of the workflow or integrator's README that looks the way you want it to look. That version is your working copy.
 
-Make sure that the version that is at [GitHub](https://github.com/transposit-connectors) looks the way you expect ** NOT FULLY SURE HOW THIS TIES TO DOCS DEBUGGING, SO AGAIN MAKING UP TO THE BEST OF MY UNDERSTANDING**. If so, make sure that that version is published on all the servers:
+* Does the README version that is at [GitHub](https://github.com/transposit-connectors) match your working copy? If so, make sure that that version is published on all the servers:
 
 [Publish from GitHub](https://console.staging.transposit.com/mc/t/transposit-workflows/actions/publish_to_github)
 
-If not, your working copy **FOR NON-WORKFLOW DEVELOPERS/ONCALL ENG, I'M CONFUSED WHAT WORKING COPY? IS THIS GITHUB? DEMO? STAGING?** may need to be synced to GitHub. 
+If not, your working copy is out of sync with the GitHub version. Sync it back to GitHub.
 
 (add sync workflow button here)
 
