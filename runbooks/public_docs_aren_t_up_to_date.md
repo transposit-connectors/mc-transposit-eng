@@ -18,7 +18,7 @@ The process we use for releasing workflows/integrators to the public is:
 1. The developer creates/updates a working copy of the service in some working org. For workflow engineers, this is generally the transposit-workflows org on the staging server.
 2. Once the working copy is fully functioning in an action (tested using that working copy's latest version), the developer *syncs the workflow* so that it is available in the transposit org on all servers and in the transposit-connectors repository on GitHub.
 3. The developer then makes a new release for the public on the GitHub repository. This release then needs to be *deployed on all servers*.
-4. Finally, the fiddly bits of updating documentation: this latest version needs to be listed in dynamic_configuration and have its README reflected correctly in the public docs.
+4. Finally, the new version's documentation changes need to be updated in the public-facing docs. This happens as part of the *publishing workflows* process.
 
 ** MAKING STUFF UP TO THE BEST OF MY UNDERSTANDING **
 The docs are auto-generated from the workflow's manifest data. Start by checking if the workflow's underlying data is correct and that the most recent version has been updated.
