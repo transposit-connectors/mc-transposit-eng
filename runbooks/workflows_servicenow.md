@@ -1,5 +1,7 @@
 # Workflows - ServiceNow
 
+Currently, the Create a ticket workflow takes a `base_url` for a ServiceNow instance, `username` (default: admin) which will represent the user doing actions in ServiceNow, and `table_name` (example: incident).
+
 ## Step Up
 Some of the these steps might not be required if the ServiceNow developer instance has already been provisioned (reclaimed after no use for 10 days), but it is important to go through the steps before trying to use the workflow. 
 
