@@ -9,3 +9,4 @@ Some of the these steps might not be required if the ServiceNow developer instan
 2. Login with ServiceNow Developer Account info in 1Password
 2. Once logged in, you will see if there is a instance live on the main page. If there is one provisioned, you will need to wake it up before you use the workflow, takes about 3-4 min. If there is not one provisioned, you will need to request one on the page, takes about 5-10 min. This will give you a URL. 
 3. The lastest admin login info for the instance should be saved to ServiceNow Developer Account in 1Password. If you are provisioning a new one, make sure to save it there. 
+4. If the action is not already created, create the action with updated configuration information, like base URL and table name. Remember to also update the Integrations auth with the base URL. 
