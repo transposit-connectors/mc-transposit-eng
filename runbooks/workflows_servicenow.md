@@ -12,3 +12,8 @@ Some of the these steps might not be required if the ServiceNow developer instan
 4. If the action is not already created, create the action with updated configuration information, like base URL and table name. Remember to also update the Integrations auth with the base URL. 
 
 Now, it is ready to be used in a runbook! 
+
+## Troubleshooting
+
+### If you run the action and get no response
+Check to make sure the instance is not asleep or has not been reclaimed at https://developer.servicenow.com
