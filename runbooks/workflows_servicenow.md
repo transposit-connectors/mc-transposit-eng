@@ -1,7 +1,7 @@
 # Workflows - ServiceNow
 
 ## Step Up
-Some of the these steps might not be required if the ServiceNow developer instance has already been provisioned (reclaimed after no use for 10 days). 
+Some of the these steps might not be required if the ServiceNow developer instance has already been provisioned (reclaimed after no use for 10 days), but it is important to go through the steps before trying to use the workflow. 
 
 1. Go to https://developer.servicenow.com
 2. Login with ServiceNow Developer Account info in 1Password
