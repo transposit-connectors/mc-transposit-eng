@@ -2,7 +2,7 @@
 
 ## Cloudwatch graph metrics
 
-### Env vars
+## Env vars
 
 **Metrics** is formatted according to https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CloudWatch-Metric-Widget-Structure.html#CloudWatch-Metric-Widget-Metrics-Array-Format . The env var takes a list of metrics, separated by commas. 
 
