@@ -5,11 +5,10 @@
 ### Env vars
 
 **Metrics** is formatted according to https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CloudWatch-Metric-Widget-Structure.html#CloudWatch-Metric-Widget-Metrics-Array-Format . The env var takes a list of metrics, separated by commas. The 4th example:
-```
+
         [ "AWS/EC2", "DiskReadBytes", "InstanceId", "i-01234567890123456" ],
         [ ".", ".", ".", "i-abc" ],
         [ ".", ".", ".", "i-123" ]
-```
 
 Could be written in this field as: `["AWS/EC2", "DiskReadBytes", "InstanceId", "i-01234567890123456"], [".", ".", ".", "i-abc"], [".", ".", ".", "i-123"]`
 
