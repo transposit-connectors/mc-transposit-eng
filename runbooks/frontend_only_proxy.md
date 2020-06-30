@@ -28,7 +28,7 @@ Add the following to /etc/hosts
 
 `127.0.0.1  s3-us-west-2.amazonaws.com`
 
-Chrome seems to not always respect the [hosts entry](https://html.developreference.com/article/11853800/Chrome+not+respecting+hosts+file+entry). So you may need to jump through a few hoops if you go back and forth between dev and prod on a particular environment. For me usually restarting Chrome is involved.
+Chrome seems to not always respect the [hosts entry](https://html.developreference.com/article/11853800/Chrome+not+respecting+hosts+file+entry). So you may need to jump through a few hoops if you go back and forth between dev and prod on a particular environment. For me usually restarting Chrome is involved (open a tab to `chrome://restart`), but **don't** do this until after you complete the following steps.  If you have problems with pages loading, comment out this `/etc/hosts` line.
 
 ## Build and run docker
 
