@@ -1,2 +1,3 @@
-workflow: 'transposit/create_connector:latest'
-prettyName: Create a connector
+---
+workflow: "transposit/create_connector:latest"
+prettyName: "Create a connector"
