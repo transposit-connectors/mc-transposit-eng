@@ -4,6 +4,10 @@
 
 [Fork a global workflow](https://console.transposit.com/mc/t/transposit-eng/actions/fork_global_workflow)
 
+The fork_global_workflow and fork_global_integrator actions both call the fork_working_copy workflow. This workflow presents a list of all repositories at transposit-connectors at Github that contain both the topic "workflow" or "integrator" (depending on the action configuration) and "global." The "global" topic is added to repositories as part of the syncing operation that syncs dynamic_config's list of public services to all environments. The workflow then calls the webhook in mc_helper that executes the (fork_working_copy operation)[https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/op/fork_working_copy] in mc_helper.
+
+The fork_working_copy operation can accept parameters to specify the working org and the working environment to fork to, but by default, these are set in mc_helper's environment variables.
+
 ## Creating a new workflow from a template
 
 If you want to start a new workflow, you can create a new workflow based on the template workflow:
