@@ -1,0 +1,2 @@
+workflow: 'transposit/fork_service_template:latest'
+prettyName: Create a new integrator
