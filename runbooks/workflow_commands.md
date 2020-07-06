@@ -8,6 +8,8 @@ The fork_global_workflow and fork_global_integrator actions both call the fork_w
 
 The fork_working_copy operation can accept parameters to specify the working org and the working environment to fork to, but by default, these are set in mc_helper's environment variables.
 
+I'm not sure if it's absolutely necessary, but in fact fork_working_copy both forks the template *and* syncs the workflow repo from GitHub, making sure that the configs deployed in the new copy match the GitHub config.yml file. 
+
 ## Creating a new workflow from a template
 
 If you want to start a new workflow, you can create a new workflow based on the template workflow:
