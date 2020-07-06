@@ -1,3 +1,4 @@
-description: Fork the template_workflow
-workflow: 'transposit/fork_service_template:latest'
-prettyName: Create a new workflow
+---
+description: "Fork the template_workflow"
+workflow: "transposit/fork_service_template:latest"
+prettyName: "Create a new workflow"
