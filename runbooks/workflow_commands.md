@@ -1,4 +1,4 @@
-# Workflow commands
+# Debugging workflow commands
 
 ## Start working with a workflow
 
