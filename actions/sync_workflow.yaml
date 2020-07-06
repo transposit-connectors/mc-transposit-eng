@@ -1,3 +1,4 @@
-description: Sync a workflow to GitHub
-workflow: 'transposit/sync_workflow:v1.0.7'
-prettyName: Sync workflow
+---
+description: "Sync a workflow to GitHub"
+workflow: "transposit/sync_workflow:v1.0.7"
+prettyName: "Sync workflow"
