@@ -12,9 +12,9 @@ I'm not sure if it's absolutely necessary, but in fact fork_working_copy both fo
 
 ## Creating a new workflow from a template
 
-If you want to start a new workflow, you can create a new workflow based on the template workflow:
-
 [Create a new workflow](https://console.transposit.com/mc/t/transposit-eng/actions/fork_template_workflow)
+
+Both fork_template_workflow and fork_template_integrator call the fork
 
 ## Forking block_kit_lib
 
