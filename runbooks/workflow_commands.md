@@ -44,7 +44,7 @@ After syncTranspositApp successfully completes its sync, it will call back to [s
 
 [Validate README](https://console.transposit.com/mc/t/transposit-eng/actions/validate_readme)
 
-When one is publicly releasing a workflow/integrator for the first time, it's a good idea to check to make sure that the automatically-generated README has valid information for all of its fields. The validate_readme action runs the validate_readme_for_service workflow, which calls a webhook that basically does the autogenerating-readme part of sync_workflow. It uses data from the manifest.json file to create a basic README file with the information a user would need to have, and provides a nice summary of the specific errors relating to data it couldn't find, like descriptions for environment variables, etc.
+When one is publicly releasing a workflow/integrator for the first time, it's a good idea to check to make sure that the automatically-generated README has valid information for all of its fields. The validate_readme action runs the validate_readme_for_service workflow, which calls a webhook that basically does the autogenerating-readme part of sync_workflow. It uses data from the manifest.json file to create a basic README file with the information a user would need to have, and provides a nice summary of the specific errors relating to data it couldn't find, like descriptions for environment variables, etc. If specific information pertaining to this particular workflow is needed, it should be provided in a setup.md file in the workflow repo; the generator will append it to the end of README.md.
 
 After validating the README, one should re-sync the workflow to GitHub with the last action.
 
