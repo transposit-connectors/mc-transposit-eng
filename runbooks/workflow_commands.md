@@ -26,9 +26,13 @@ This action also calls the fork_working_copy workflow. The workflow then calls t
 
 ## Syncing a workflow to GitHub:
 
-Sync your workflow to GitHub:
-
 [Sync workflow](https://console.transposit.com/mc/t/transposit-eng/actions/sync_workflow)
+
+Syncing a workflow is the process of pushing a working copy of a workflow from a Transposit workspace to its GitHub source-of-truth repository in transposit-connectors. The underlying operation won't let you sync a copy from the transposit workspace, because that workspace is meant for the currently-deployed versions and will get rewritten from the GitHub source-of-truth every day.
+
+This action calls the sync_workflow workflow (and works on both workflows and integrators, name notwithstanding), which executes a webhook that calls the [sync_workflow](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/op/sync_workflow) operation in mc_helper. It accepts a URL from the Transposit dev console, which it can parse into the relevant workflow/maintainer/environment.
+
+Sync_workflow uses the syncTranspositApp lambda (via connector_utilities.sync_multiple_transposit_apps) to perform git push on the specified workflow/integrator to its GitHub repo. 
 
 ## Validating a README:
 
