@@ -44,7 +44,7 @@ After syncTranspositApp successfully completes its sync, it will call back to [s
 
 [Validate README](https://console.transposit.com/mc/t/transposit-eng/actions/validate_readme)
 
-Make any necessary changes to your working copy and then sync the workflow again.
+When one is publicly releasing a workflow/integrator for the first time, it's a good idea to check to make sure that the automatically-generated README has valid information for all of its fields. The 
 
 (Eventually we'll have an action here to validate the workflow) 
 
