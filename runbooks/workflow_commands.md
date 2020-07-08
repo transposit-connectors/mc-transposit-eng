@@ -14,13 +14,15 @@ I'm not sure if it's absolutely necessary, but in fact fork_working_copy both fo
 
 [Create a new workflow](https://console.transposit.com/mc/t/transposit-eng/actions/fork_template_workflow)
 
-Both fork_template_workflow and fork_template_integrator call the fork
+Both fork_template_workflow and fork_template_integrator call the fork_service_template workflow. This workflow calls the [fork_template_command](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/op/fork_template_command) webhook in mc_helper, which runs the fork command on the appropriate template on the server.
 
 ## Forking block_kit_lib
 
 You can also fork block_kit_lib if you need to make changes to it:
 
 [Fork block_kit_lib](https://console.transposit.com/mc/t/transposit-eng/actions/fork_block_kit_lib)
+
+This action also calls the fork_working_copy workflow. The workflow then calls the webhook in mc_helper that executes the [fork_working_copy operation](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/op/fork_working_copy) in mc_helper on block_kit_lib.
 
 ## Syncing a workflow to GitHub:
 
