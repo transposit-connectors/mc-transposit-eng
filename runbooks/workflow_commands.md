@@ -60,10 +60,9 @@ This action calls the deploy_release_to_mc workflow, which finds the latest tag 
 
 ## Publish from GitHub to servers
 
-Clean up behind yourself: delete your working copy (as well as the copy in transposit-workflows, if that's not the org you used).
-Then you can publish the GitHub version to the transposit org on all servers:
-
 [Publish from GitHub](https://console.transposit.com/mc/t/transposit-eng/actions/publish_to_github)
+
+At this point, the GitHub version of the workflow/integrator should be absolutely the way you want it. If this service is already listed in dynamic_config, it'll be published from GitHub to the transposit workspace on all servers by the daily syncer. You can also manually trigger this publication by running this action.
 
 ## Create PR for dynamic_config
 
