@@ -1,0 +1,2 @@
+workflow: 'transposit/sync_runbook:v1.0.0'
+prettyName: Sync runbook
