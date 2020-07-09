@@ -68,11 +68,9 @@ The publish_workflow workflow calls a webhook that calls [publish_workflow](http
 
 ## Create PR for dynamic_config
 
-If you want to include this workflow or integrator in the global list, you'll have to add it to dynamic_config:
-
 [Make dynamic_config PR](https://console.transposit.com/mc/t/transposit-eng/actions/make_dynamic_config_pr)
 
-Note: You'll have to wait for all the CI tests to run before you'll be allowed to squash and merge the PR, but you can do that whenever the tests are done. Delete the branch when you've merged.
+This action only works for adding a new entry into dynamic_configuration. It executes the create_dynamic_config_pr workflow, which calls a webhook that runs the [make_dynamic_config_pr](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/op/make_dynamic_config_pr) operation in mc_helper. Because YAML parsers can't be guaranteed to write out ingested YAML exactly as it was, comments and all, and I didn't want to make a change that affected any more lines than necessary, this operation can only insert a new entry into the relevant global workflow or integrator array.
 
 ## Sync a Transposit app
 
