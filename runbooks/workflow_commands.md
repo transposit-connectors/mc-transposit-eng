@@ -62,7 +62,9 @@ This action calls the deploy_release_to_mc workflow, which finds the latest tag 
 
 [Publish from GitHub](https://console.transposit.com/mc/t/transposit-eng/actions/publish_to_github)
 
-At this point, the GitHub version of the workflow/integrator should be absolutely the way you want it. If this service is already listed in dynamic_config, it'll be published from GitHub to the transposit workspace on all servers by the daily syncer. You can also manually trigger this publication by running this action.
+At this point, the GitHub version of the workflow/integrator should be absolutely the way you want it. If this service is already listed in dynamic_config, it'll be published from GitHub to the transposit workspace on all servers by the daily syncer. You can also manually trigger publication by running this action.
+
+The publish_workflow workflow calls a webhook that calls [publish_workflow](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/op/publish_workflow) in mc_helper. Publish_workflow has two execution paths: one for an array of names (used by the scheduled syncer) and one for a single name, which is what this workflow uses. It makes sure that there are at least stub versions of the service in the transposit org on all envs, then syncs the GitHub version to each of those, using sync_multiple_transposit_apps. If the sync was successful, it then publishes the configurations listed in config.yml to each of the transposit versions on the envs.
 
 ## Create PR for dynamic_config
 
