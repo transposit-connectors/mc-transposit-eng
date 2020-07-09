@@ -76,10 +76,21 @@ This action only works for adding a new entry into dynamic_configuration. It exe
 
 [Sync Transposit app](https://console.transposit.com/mc/t/transposit-eng/actions/sync_transposit_app)
 
+
+This action is not actually workflow-specific, but I didn't know where else to put this. It runs the sync_transposit_app workflow, which calls the [sync_transposit_command](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/op/sync_transposit_command) webhook in mc_helper, which calls sync_transposit_app in connector_utilities, which calls sync_multiple_transposit_apps, which calls the syncTranspositApp lambda to git push the apps from one place to the other.
+
 ## Create a connector
 
 [Create a connector](https://console.transposit.com/mc/t/transposit-eng/actions/create_a_connector)
 
+This action is not actually workflow-specific, but I didn't know where else to put this. It runs the create_connector workflow, which calls the [create_connector](https://console.demo.transposit.com/dev/t/transposit/dc_helper/code/op/create_connector_webhook) webhook in *dc_helper* (not mc_helper). Connectors can be either smart connectors or swagger-only. 
+
+The operation that is called from the webhook, [create_connector](https://console.demo.transposit.com/dev/t/transposit/dc_helper/code/op/create_connector), creates the necessary stubs for a new data connector and test. If the is_smart flag is on, it will create a raw and smart stub on all the servers and in GitHub transposit-connectors. The `raw_whatever` repo will contain the swagger part and the `whatever` repo will contain the smart part. If it's not on, the raw swagger connector stub will be created as `whatever`. 
+
+A stub `test_whatever` app will be created on demo, which you can fill in to make a test you can add to the test_runner app.
+
 ## Generate a README
 
 [Generate README](https://console.transposit.com/mc/t/transposit-eng/actions/generate_readme)
+
+This action runs the generate_readme_for_service workflow, which actually calls a generic webhook at mc_helper, [run_op_for_service_command](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/op/run_op_for_service_command). In this case, the operation that is called is [sync_documentation](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/op/sync_documentation) (also called in sync_workflow). This operation generates the metadata used to create the readme from the manifest.json for the service and syncs the readme to GitHub. It also writes this metadata out as frontmatter to the public documentation in www, as part of an ongoing branch called `workflow-readmes`. Every week, `workflow-readmes` gets scooped up into a pull request by a scheduled task.
