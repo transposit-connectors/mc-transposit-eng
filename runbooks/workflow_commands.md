@@ -52,9 +52,11 @@ After validating the README, one should re-sync the workflow to GitHub with the 
 
 ## Deploy latest release
 
-If all looks to be in order, make a release at GitHub, either from an existing tag or by creating a new tag. The tag must conform to semver conventions. Then deploy that release in MC:
-
 [Deploy latest release](https://console.transposit.com/mc/t/transposit-eng/actions/deploy_release)
+
+While it is possible to deploy configurations based only on git tags, I think it is best practice for "real" deployments (i.e. final versions meant for customer use) to correspond to releases in the GitHub source-of-truth repo. This way we can make sure that we've written a bit of description about what important changes happened.
+
+This action calls the deploy_release_to_mc workflow, which finds the latest tag saved in the GitHub version and calls the [deploy_release_command](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/op/deploy_release_command) webhook. This operation uses the fork_working_copy operation to create a temporary working copy on staging in the transposit-workflows workspace. This working copy has that latest release as a git tag, so the operation can publish this tag as a configuration. The operation then runs sync_workflow again to sync this back to GitHub, completing the cycle.
 
 ## Publish from GitHub to servers
 
