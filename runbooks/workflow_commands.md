@@ -4,6 +4,8 @@
 
 This runbook enumerates all of the actions available in the transposit-workflows [Workflow Commands](https://console.staging.transposit.com/mc/t/transposit-workflows/runbooks/workflow_slash_commands) runbook. That version is aimed at walking a user through the processes involved in creating, modifying, and publishing workflows, while this version explains each of the actions in more detail to aid in debugging.
 
+These actions all follow a similar pattern: they invoke webhooks in either [mc_helper](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/) or [dc_helper](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/), which then call on specific operations. I've tried to explain the basic execution flow to the important operations, but if something is not clear from tracing through the execution, please let me (Daisie) know. 
+
 ## Forking a workflow
 
 [Fork a global workflow](https://console.transposit.com/mc/t/transposit-eng/actions/fork_global_workflow)
