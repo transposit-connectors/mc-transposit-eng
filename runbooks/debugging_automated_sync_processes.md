@@ -21,15 +21,3 @@ There are other helper ops in connector_utilities to make commonly-used sync pat
 The `/sync-transposit-app` slash command was the first one of these to be written. It invokes the [slack_slash_command](https://console.demo.transposit.com/dev/t/transposit/connector_utilities/code/op/slack_slash_command_webhook) webhook in connector_utilities. Because I wrote it so long ago, it might be using some deprecated authentication and execution patterns from before the MC pivot. I may clean this up someday.
 
 It passes the whole parsed_body received in the slash command invocation in the body for the lambda, so any slack parameters can be picked up by the callback.
-
-## Step 2
-
-
-
-### Third-level headings like this are treated as headings only
-
-To divide information within a step, you can use a third-level heading.
-
-## Step 3
-
-And that's how runbooks are made. Happy runbooking!
