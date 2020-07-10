@@ -10,7 +10,7 @@ The lambda can take several versions of inputs, many of which have examples in t
 
 If something fails in a push, go to the [cloudwatch logs](https://us-west-2.console.aws.amazon.com/cloudwatch/home?region=us-west-2#logsV2:log-groups/log-group/$252Faws$252Flambda$252FsyncTranspositApp/log-events) to see what went wrong. If something went wrong with a push, try reproducing the push on your local machine.
 
-The lambda can also be invoked asynchronously, with a separate `body` and `sync` key. The `sync` key corresponds to the array of apps to sync, as explained before. The `body` key points to an object that can contain a `webhook` object for a Transposit webhook, containing the api_key, hostname, and operation to be invoked. The whole body object is passed to the webhook as the request body, so context can be maintained.
+The lambda can also be invoked asynchronously, with a separate `body` and `sync` key. The `sync` key corresponds to the array of apps to sync, as explained before. The `body` key points to an object that can contain a `webhook` object for a Transposit webhook, containing the api_key, hostname, and operation to be invoked. The whole body object is passed to the webhook in the request body, so context can be maintained.
 
 The lambda is invoked through the [sync_multiple_transposit_apps](https://console.demo.transposit.com/dev/t/transposit/connector_utilities/code/op/sync_multiple_transposit_apps). The tag `deployed` is hard-coded to be the invoked qualifier in that operation. It can be invoked either synchronously or asynchronously. There are other helper ops in connector_utilities to make commonly-used sync patterns easier to access, but under the hood, they all call sync_multiple_transposit_apps.
 
