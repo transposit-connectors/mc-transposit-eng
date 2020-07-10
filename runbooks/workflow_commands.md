@@ -94,3 +94,19 @@ A stub `test_whatever` app will be created on demo, which you can fill in to mak
 [Generate README](https://console.transposit.com/mc/t/transposit-eng/actions/generate_readme)
 
 This action runs the generate_readme_for_service workflow, which actually calls a generic webhook at mc_helper, [run_op_for_service_command](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/op/run_op_for_service_command). In this case, the operation that is called is [sync_documentation](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/op/sync_documentation) (also called in sync_workflow). This operation generates the metadata used to create the readme from the manifest.json for the service and syncs the readme to GitHub. It also writes this metadata out as frontmatter to the public documentation in www, as part of an ongoing branch called `workflow-readmes`. Every week, `workflow-readmes` gets scooped up into a pull request by a scheduled task.
+
+## Sync a runbook
+
+[Sync runbook](https://console.transposit.com/mc/t/transposit-eng/actions/sync_runbook)
+
+This action is most akin to the sync_transposit_app action: it calls the sync_runbook action, which calls a webhook that calls the [sync_runbook](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/op/sync_runbook) operation in mc_helper. 
+
+The sync_runbook operation uses a GitHub repository named `mc-workspace_name` to perform the synchronization. If this repo doesn't exist, it first creates it. From there, it pushes the source url's workspace and the target url's workspace to the appropriate env-named branches at GitHub, to make sure those sources of truth are as up-to-date as possible. 
+
+Then it takes the runbook md file at the GitHub source branch, updates the action links to point to the target workspace, and pushes that runbook file to the GitHub target branch. 
+
+It also updates all of the linked action yaml files from the GitHub source branch and copies them to the GitHub target branch.
+
+Finally, it uses the syncTranspositApp lambda, via connector_utilities.sync_transposit_app, to push the GitHub target branch to the targeted workspace.
+
+The result is a link to the diff between the GitHub target branch before and after the sync, so you can easily see what changes were made.
