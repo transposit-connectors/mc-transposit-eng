@@ -12,12 +12,13 @@ If something fails in a push, go to the [cloudwatch logs](https://us-west-2.cons
 
 The lambda can also be invoked asynchronously, with a separate `body` and `sync` key. The `sync` key corresponds to the array of apps to sync, as explained before. The `body` key points to an object that can contain a `webhook` object for a Transposit webhook, containing the api_key, hostname, and operation to be invoked. The whole body object is passed to the webhook in the request body, so context can be maintained.
 
-The lambda is invoked through the [sync_multiple_transposit_apps](https://console.demo.transposit.com/dev/t/transposit/connector_utilities/code/op/sync_multiple_transposit_apps). The tag `deployed` is hard-coded to be the invoked qualifier in that operation. It can be invoked either synchronously or asynchronously. There are other helper ops in connector_utilities to make commonly-used sync patterns easier to access, but under the hood, they all call sync_multiple_transposit_apps.
+The lambda is invoked through the [sync_multiple_transposit_apps](https://console.demo.transposit.com/dev/t/transposit/connector_utilities/code/op/sync_multiple_transposit_apps). The tag `deployed` is hard-coded to be the invoked qualifier in that operation. It can be invoked either synchronously or asynchronously. If invoked asynchronously, it can accept a body object, containing context and the webhook to be called back on completion.
 
+There are other helper ops in connector_utilities to make commonly-used sync patterns easier to access, but under the hood, they all call sync_multiple_transposit_apps.
 
 ## Highest-level ops: actions, workflows, slash commands, scheduled tasks
 
-The first place to look is the Monitor for the thing that was executed. 
+The `/sync-transposit-app` slash command was the first one of these to be written. 
 
 ## Step 2
 
