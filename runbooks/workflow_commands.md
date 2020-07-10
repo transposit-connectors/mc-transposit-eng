@@ -83,7 +83,7 @@ This action only works for adding a new entry into dynamic_configuration. It exe
 [Sync Transposit app](https://console.transposit.com/mc/t/transposit-eng/actions/sync_transposit_app)
 
 
-This action is not actually workflow-specific, but I didn't know where else to put this. It runs the sync_transposit_app workflow, which calls the [sync_transposit_command](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/op/sync_transposit_command) webhook in mc_helper, which calls sync_transposit_app in connector_utilities, which calls sync_multiple_transposit_apps, which calls the syncTranspositApp lambda to git push the apps from one place to the other.
+This action is not actually workflow-specific, but I didn't know where else to put this. It runs the sync_transposit_app workflow, which calls the [sync_transposit_command](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/op/sync_transposit_command) webhook in mc_helper, which calls sync_transposit_app in connector_utilities, which calls sync_multiple_transposit_apps, which calls the syncTranspositApp lambda to git push the apps from one place to the other. By default, this is a force-push, to make it smoother for automated processes. If something fails in a push, go to the [cloudwatch logs](https://us-west-2.console.aws.amazon.com/cloudwatch/home?region=us-west-2#logsV2:log-groups/log-group/$252Faws$252Flambda$252FsyncTranspositApp/log-events) to see what went wrong.
 
 ## Create a connector
 
