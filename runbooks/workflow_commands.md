@@ -1,5 +1,9 @@
 # Debugging workflow commands
 
+## Introduction
+
+This runbook enumerates all of the actions available in the transposit-workflows [Workflow Commands](https://console.staging.transposit.com/mc/t/transposit-workflows/runbooks/workflow_slash_commands) runbook. That version is aimed at walking a user through the processes involved in creating, modifying, and publishing workflows, while this version explains each of the actions in more detail to aid in debugging.
+
 ## Forking a workflow
 
 [Fork a global workflow](https://console.transposit.com/mc/t/transposit-eng/actions/fork_global_workflow)
