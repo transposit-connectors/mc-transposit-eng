@@ -38,7 +38,7 @@ It’s often useful to start by simply listing out the indices on the cluster:
 ```
 GET _cat/indices
 ```
-Then, to delete an index, simply make a DELETE request to the index name.
+Then, to delete an index, simply make a `DELETE` request to the index name.
 
 ```
 DELETE end-request-logs
