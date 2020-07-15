@@ -6,19 +6,20 @@ Sometimes it is desirable to delete old indices from a cluster - either to free 
 
 **Warning: before doing this, you should discuss in #oncall and make sure there is a consensus that this is the correct course of action. You should probably also practice on a sandbox before making changes in demo/staging/prod.**
 
-In general, managing indices is done through Elasticsearch’s API. When making API calls to Elasticsearch in AWS, the requests need to be signed. The easiest way to do this is to set up kibana and point it to your desired Elasticsearch cluster: [Elasticsearch](https://transposit.atlassian.net/wiki/spaces/DEV/pages/33783809/Elasticsearch). Open up kibana in your browser and navigate to the **Dev tools** tab, where you can execute API calls.
+In general, managing indices is done through Elasticsearch’s API. When making API calls to Elasticsearch in AWS, the requests need to be signed. The easiest way to do this is to set up kibana and point it to your desired Elasticsearch cluster: more information can be found [here](https://transposit.atlassian.net/wiki/spaces/DEV/pages/33783809/Elasticsearch). Open up kibana in your browser and navigate to the **Dev tools** tab, where you can execute API calls.
 
 ## Backups
 
-AWS automatically takes hourly snapshots of each individual index in our clusters. If anything goes wrong, we can restore specific indices. In the following screenshot, you can see the call to list snapshots. The result shows that the snapshot name is `cs-automated` and is stored in S3.
+AWS automatically takes hourly snapshots of each individual index in our clusters. If anything goes wrong, we can restore specific indices. Run the following request to see a list of snapshots:
 ```
 GET _snapshot
 ```
-You can drill into `cs-automated` to see individual snapshots:
+The result shows that the snapshot name is `cs-automated` and is stored in S3. You can then drill into `cs-automated` to see individual snapshots:
 
 ```
 GET _snapshot/cs-automated/_all
 ```
+
 The last API call shows how one would restore a specific index (or multiple indices, comma-separated) to a specific snapshot.
 
 ```
