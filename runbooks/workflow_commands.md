@@ -6,6 +6,8 @@ This runbook enumerates all of the actions available in the transposit-workflows
 
 These actions all follow a similar pattern: they invoke webhooks in either [mc_helper](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/) or [dc_helper](https://console.demo.transposit.com/dev/t/transposit/mc_helper/code/), which then call on specific operations. I've tried to explain the basic execution flow to the important operations, but if something is not clear from tracing through the execution, please let me (Daisie) know. 
 
+Note: because we don't pass the bodies of HTTP responses up to the calling workflows, the error messages you get in MC are often just "HostException: Response status not ok. Status code: 500". There may very well be an informative message in that HTTP response, though! Go look in the Monitor tab of the calling workflow.
+
 ## Forking a workflow
 
 [Fork a global workflow](https://console.transposit.com/mc/t/transposit-eng/actions/fork_global_workflow)
