@@ -12,5 +12,5 @@ New action!
 
 [Sync runbook](https://console.transposit.com/mc/t/transposit-eng/actions/sync_runbook)
 
-
+[make a dynamic config PR](https://console.transposit.com/mc/t/transposit-eng/actions/make_a_dynamic_config_pr)
 
