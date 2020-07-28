@@ -56,7 +56,11 @@ When one is publicly releasing a workflow/integrator for the first time, it's a 
 
 After validating the README, one should re-sync the workflow to GitHub with the last action.
 
-(Eventually we'll have an action here to validate the workflow) 
+## Validating a service
+
+(https://console.transposit.com/mc/t/transposit-eng/actions/validate_service)
+
+Validating a service runs all of the available audits in [mc_auditor](https://console.demo.transposit.com/dev/t/transposit/mc_auditor/). It executes the [complete_audit_on_service webhook](https://console.demo.transposit.com/dev/t/transposit/mc_auditor/code/op/complete_audit_on_service) and then loops, calling the [list_results_for_audit webhook](https://console.demo.transposit.com/dev/t/transposit/mc_auditor/code/op/list_results_for_audit) until the status is "completed."
 
 ## Deploy latest release
 
