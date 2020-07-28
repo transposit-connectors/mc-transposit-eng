@@ -60,7 +60,7 @@ After validating the README, one should re-sync the workflow to GitHub with the 
 
 (https://console.transposit.com/mc/t/transposit-eng/actions/validate_service)
 
-Validating a service runs all of the available audits in [mc_auditor](https://console.demo.transposit.com/dev/t/transposit/mc_auditor/). It executes the [complete_audit_on_service webhook](https://console.demo.transposit.com/dev/t/transposit/mc_auditor/code/op/complete_audit_on_service) and then loops, calling the [list_results_for_audit webhook](https://console.demo.transposit.com/dev/t/transposit/mc_auditor/code/op/list_results_for_audit) until the status is "completed."
+Validating a service runs all of the available audits in [mc_auditor](https://console.demo.transposit.com/dev/t/transposit/mc_auditor/). It executes the [complete_audit_on_service webhook](https://console.demo.transposit.com/dev/t/transposit/mc_auditor/code/op/complete_audit_on_service) and then loops, calling the [list_results_for_audit webhook](https://console.demo.transposit.com/dev/t/transposit/mc_auditor/code/op/list_results_for_audit) until the status is "completed." The complete_audit_on_service webhook sets up a master task, to be used to collect the sub-audits, then spins off separate tasks for each audit. The [_collect_subaudits](https://console.demo.transposit.com/dev/t/transposit/mc_auditor/code/op/_collect_subaudits) operation then picks up all of the subaudits as they're completed and adds them to the master audit results.
 
 ## Deploy latest release
 
