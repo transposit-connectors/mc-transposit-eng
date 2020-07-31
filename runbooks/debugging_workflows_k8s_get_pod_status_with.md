@@ -1,6 +1,6 @@
 # Debugging Workflows - K8s Get Pod Status with Azure Functions Proxy
 
-k8s_get_pod_status
+rocos/k8s_pod_status
 
 ## MongdoDB on Yoko's sandbox
 * Where are the credentials? Can you find out how the user would access their database using the mongo shell command?
