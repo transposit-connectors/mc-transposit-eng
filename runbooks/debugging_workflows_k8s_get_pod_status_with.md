@@ -2,10 +2,10 @@
 
 rocos/k8s_pod_status
 
-## MongdoDB on Yoko's sandbox
-* Where are the credentials? Can you find out how the user would access their database using the mongo shell command?
-* Differences between Mongo Atlas and Mongo on EC2 - If the database url is a dns hostname (and not an ip address), we attach `+srv` to the connection string (code in the connector) to tell MongoDB to query DNS for the record (more information [here](https://docs.mongodb.com/manual/reference/connection-string/))
-* Yoko has an instance on EC2, where is the link to see that on AWS
+## To be completed
+* Writeup on proxy
+* Function
+* Caveats
 
 ## Debugging the function that calls the K8s API
 There is a lambda that calls the MongoDB commands using the Nodejs drivers. 
