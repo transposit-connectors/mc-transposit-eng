@@ -1,0 +1,2 @@
+workflow: 'transposit-eng/workflow_dynamic_config_pr:latest'
+prettyName: Set up MC for customer onboarding
