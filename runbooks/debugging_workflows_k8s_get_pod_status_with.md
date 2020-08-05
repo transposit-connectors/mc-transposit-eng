@@ -7,10 +7,10 @@ rocos/k8s_pod_status
 * Function
 * Caveats
 
-## Debugging the function that calls the K8s API
-There is a lambda that calls the MongoDB commands using the Nodejs drivers. 
+## Debugging the proxy that calls the K8s(AKS) API Server
+There is a Node function which proxies the request to the k8s (Azure AKS) API server and disables validation of the self-signed SSL cert fronting the specific k8s API server 
     
-* Where it's deployed: under the development-admin role in us-west-2. https://us-west-2.console.aws.amazon.com/lambda/home?region=us-west-2#/functions/mongodb_lambda_bridge?tab=configuration. 
+* Where it's deployed: Access (portal.azure.com) using the credentials for `test-user1@transposit.com` listed in 1password. Navigate to `App Services` and select 
 * There are test events set up at the lambda itself on AWS. Make sure those work correctly.
 * Where the code lives: https://github.com/transposit-connectors/mongodb_lambda_bridge. You can make updates directly in AWS, but make sure those updates are reflected on github
 
