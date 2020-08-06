@@ -3,7 +3,7 @@
 rocos/k8s_pod_status
 
 ## About
-Morad and I created an Azure functions proxy to allow Rocos to communicate between the Transposit platform (`rocos/k8s_pod_status` workflow) and their Azure AKS kubernetes cluster. The k8s cluster API server is fronted by a self-signed SSL certificate that Transposit does not recognize as legitimate.
+Morad and Dan created an Azure functions proxy to allow Rocos to communicate between the Transposit platform (`rocos/k8s_pod_status` workflow) and their Azure AKS kubernetes cluster. The k8s cluster API server is fronted by a self-signed SSL certificate that Transposit does not recognize as legitimate.
 
 This function uses single bearer token authentication tied to a service account /cluster role binding pair configured on the kubernetes cluster in advance. This proxy **WILL NOT** work as is with regular user authentication (which typically depends on client certificate data found in tke kubeconfig file). It is meant to be a temporary measure for Rocos until it can be addressed more appropriately from the Transposit product side.
 
@@ -18,16 +18,9 @@ There is a Node function which proxies the request to the k8s (Azure AKS) API se
 * To test: Since the function uses a portion of the incoming request URL to create the proxied request, I've been testing with curl from my local machine and adding `-H "Authorization: Bearer $TOKEN"` to pass the correct auth. Once that worked to satisfaction, I would test from the Transposit dev platform and eventually a runbook embedded action.
 * The function outputs logging data to the embedded Azure console. The majority of issues have been visible from the request header, which is printed to the console logs on each invocation.
 
-## Debugging the webhook that calls the lambda
-The lambda is itself called by a Transposit app that then exposes webhooks that can be used by workflows. 
+## Debugging the workflow rocos/k8s_pod_status
+This kubernetes workflow calls sends its request to the Azure Functions proxy directly, with the same URL path which would be used if it were communicating diretly with the k8s API server directly. Only the hostname is different.
 
-* Where it's deployed: https://console.transposit.com/dev/t/transposit/lambda_bridge/. 
-* The lambda bridge app's webhooks can be tested as well: there are http_event default values set for each of the webhook operations. Modify those to test functionality. 
-* Changes should be synced back to its GitHub repo as well: https://github.com/transposit-connectors/lambda_bridge
-
-## Debugging the workflows kill_op_in_mongodb and list_current_ops_in_mongodb
-MongoDB workflows call the webhooks for that Transposit app using the raw_transposit_webhook connector.
-
-* Make sure that the connector's configuration is set correctly, using the baseURL of the deployed lambda bridge Transposit app.
-* Make sure that any operations that call raw_transposit_webhook have the correct API key listed. Unfortunately, the only way that this can be saved in the workflow itself for now is to hard-code it in the api.run calls.
-* Make sure that the workflow calls the webhook correctly and receives the expected results.
+* Make sure that the connector's configuration is set correctly, using a kubernetes bearer token associated with a k8s service account / cluster role binding pair with correct permissions to get pod status and access the specified namespace
+* Do not attempt to use this workflow with "human user" auth for one of the cloud provider kubernetes implementations. This user type generally requires client certificate data as well.
+* Make sure that the workflow sends its request to the proxy correctly and returns the correct results. The `kubectl` CLI utility can be used to verify results using the same auth as the workflow (in the kubeconfig file format)
