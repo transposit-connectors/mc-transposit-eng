@@ -16,6 +16,7 @@ There is a Node function which proxies the request to the k8s (Azure AKS) API se
 * From the Azure Functions app screen, use the nav bar on the left of the screen. Click on **Functions** in the Functions sub-menu, then click *ankrim-proxy-test*.
 * Where the code lives: From the *ankrim-proxy-test* screen, look in the nav bar on the left side of the screen for the *Developer* sub-menu. Then click on **Code + test**
 * To test: Since the function uses a portion of the incoming request URL to create the proxied request, I've been testing with curl from my local machine and adding `-H "Authorization: Bearer $TOKEN"` to pass the correct auth. Once that worked to satisfaction, I would test from the Transposit dev platform and eventually a runbook embedded action.
+* The function outputs logging data to the embedded Azure console. The majority of issues have been visible from the request header, which is printed to the console logs on each invocation.
 
 ## Debugging the webhook that calls the lambda
 The lambda is itself called by a Transposit app that then exposes webhooks that can be used by workflows. 
