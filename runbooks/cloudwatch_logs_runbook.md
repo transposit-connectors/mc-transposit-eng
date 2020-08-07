@@ -6,4 +6,6 @@ This runbook contains workflows that access cloudwatch logs
 
 Look up your request ID using the environment-specific action below to retrieve all of its error logs.
 
-
+[Request ID Help (Demo)](https://console.transposit.com/mc/t/transposit-eng/actions/request_id_help_demo)
+[Request ID Help (Staging)](https://console.transposit.com/mc/t/transposit-eng/actions/request_id_help_staging)
+[Request ID Help (Prod)](https://console.transposit.com/mc/t/transposit-eng/actions/request_id_help_prod)
