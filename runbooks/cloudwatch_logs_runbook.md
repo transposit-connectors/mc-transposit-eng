@@ -1,6 +1,6 @@
 # Internal- Cloudwatch Logs actions
 
-This runbook contains actions that access cloudwatch logs
+This runbook contains actions that access cloudwatch logs to help with debugging
 
 ## Request ID help
 
