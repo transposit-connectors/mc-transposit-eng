@@ -1,0 +1,5 @@
+---
+description: "automatically add comment to the alert jira ticket when the alert is\
+  \ triggered"
+workflow: "transposit-eng/track_alarms_in_jira_aa:latest"
+prettyName: "track triggered alerts in jira"
