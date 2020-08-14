@@ -1,30 +1,12 @@
-# transposit incident runbook
-
-The top first-level heading becomes the runbook title. A paragraph immediately following the title is the runbook description.
+# Transposit Incident Runbook
 
 ## Step 1
 
-Incident Actions
+Create a JIRA
+[Create JIRA](https://console.transposit.com/mc/t/transposit-eng/actions/create_jira)
 
-One:
-[Click 1](https://console.monkey.transposit.com/mc/t/transposit/actions/workflow)
+Start a Zoom
+[Start a Zoom](https://console.transposit.com/mc/t/transposit-eng/actions/start_a_zoom)
 
-Two:
-[Click 2](https://console.monkey.transposit.com/mc/t/transposit/actions/workflow)
-
-Three:
-[Click 3](https://console.monkey.transposit.com/mc/t/transposit/actions/workflow)
-
-Four:
-[Click 4](https://console.monkey.transposit.com/mc/t/transposit/actions/workflow)
-## Step 2
-
-Each second-level heading defines a separate step. The runbook's table of contents is made up of each of the runbook's steps.
-
-### Third-level headings like this are treated as headings only
-
-To divide information within a step, you can use a third-level heading.
-
-## Step 3
-
-And that's how runbooks are made. Happy runbooking!
+Page primary oncall
+[Page Oncall](https://console.transposit.com/mc/t/transposit-eng/actions/page_oncall)
