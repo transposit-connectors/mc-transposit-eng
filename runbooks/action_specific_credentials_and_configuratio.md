@@ -5,6 +5,8 @@
 You can now add action-specfic credentials and configuration.
 
 **What does this mean?**
+
+
 Imagine you have a workflow that uses `transposit/aws_cloudwatch_logs`. You want to use it on both staging and prod. But the [integrations page](https://console.transposit.com/mc/t/transposit-eng/settings/integrations) only allows you to add one auth to be used for all of the workflows that use `transposit/aws_cloudwatch_logs`.
 
 With action-specific credentials, you can add auth that will _only_ be used for that action. For example, we have these three actions:
@@ -19,4 +21,4 @@ Which all use the same workflow, but have their own environment-specific credent
 
 If the action you're running has specific credentials and configuration (applied on the action's page), those are used. If those do not exist, we fallback to any credentials provided via the integrations page.
 
-* Note that this is currently an internal feature only.
+Note: that this is currently an internal feature only.
