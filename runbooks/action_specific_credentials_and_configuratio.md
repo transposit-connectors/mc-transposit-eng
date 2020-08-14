@@ -23,7 +23,7 @@ If the action you're running has specific credentials and configuration (applied
 
 ** Why did we build this? **
 
-We want to dogfood our product more and debug Transposit using runbooks and actions, but a big limitation was the "only one credential for all of the workflows that use a connector" issue, since we have three AWS environments.
+We want to dogfood our product more and debug Transposit using runbooks and actions, but a big limitation was the "only one credential for all of the workflows that use a connector" issue, since we have three AWS environments with different credentials for each.
 
 Note: that this is currently an internal feature only.
 
