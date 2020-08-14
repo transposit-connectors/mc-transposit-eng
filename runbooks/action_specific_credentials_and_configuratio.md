@@ -1,6 +1,6 @@
 # Action-specific credentials and configuration
 
-## Step 1
+## Action-specific crednetials and configuration
 
 You can now add action-specfic credentials and configuration.
 
