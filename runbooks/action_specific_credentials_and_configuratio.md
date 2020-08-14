@@ -1,8 +1,8 @@
 # Action-specific credentials and configuration
 
-## Action-specific crednetials and configuration
+## Action-specific credentials and configuration
 
-You can now add action-specfic credentials and configuration.
+You can now add action-specific credentials and configuration.
 
 **What does this mean?**
 
