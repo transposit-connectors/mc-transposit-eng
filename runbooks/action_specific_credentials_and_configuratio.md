@@ -15,6 +15,8 @@ With action-specific credentials, you can add auth that will _only_ be used for 
 Which all use the same workflow, but have their own environment-specific credentials tied to them (which you can see on the respective action pages).
 
 ** The hierarchy of applied credentials and configuration **
+
+
 If the action you're running has specific credentials and configuration (applied on the action's page), those are used. If those do not exist, we fallback to any credentials provided via the integrations page.
 
 * Note that this is currently an internal feature only.
