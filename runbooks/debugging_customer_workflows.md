@@ -45,6 +45,23 @@ There are three Datadog workflows (`datadog_graph_workflow`, `datadog_graph_by_t
 
 `datadog_graph_aa` - An auto action that gets a snapshot of a query graph based upon a Pagerduty incident title
 
+These all us the [Datadog Snapshot API endpoint](https://docs.datadoghq.com/api/v1/snapshots/).
+
+### Troubleshooting
+
+#### If you are getting a bad response back from the API, like invalid JSON in the error message:
+
+The query that is being run might be an issue. The Snapshot API endpoint doesn't support all queries in Datadog. In all workflows, except `datadog_graph_by_title`,
+we use `graph_def` when sending the query to graph to Datadog. It supports more complex queries than `metric_query`. 
+
+Currently, the Datadog docs don't say all of the queries it supports. (Taylor is working on trying to get this clarified.) 
+
+From what we know the query must be: 
+* For a timeseries
+* Have no variables (variables are removed in the workflows)
+
+We also support single and multiple queries. 
+
 ## EC2 Run command
 
 The workflow takes an instance id and a shell command, which is executed and then checked until the command reaches a terminal state. The terminal state is printed to slack along with the standard output and standard error, if they exist.
