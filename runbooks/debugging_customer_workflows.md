@@ -35,32 +35,54 @@ Is written in this field as: `["AWS/EC2", "DiskReadBytes", "InstanceId", "i-0123
 **Metric Title:** AWS EC2/RDS CPU Utilization
 
 ## Datadog 
-There are three Datadog workflows (`datadog_graph_workflow`, `datadog_graph_by_title`, `datadog_graph_dashboard`) and a Datadog auto action (`datadog_graph_aa`).
+There are three Datadog workflows (`datadog_graph_workflow`, `datadog_graph_by_title`, `datadog_graph_dashboard`) There are three Datadog workflows (`datadog_graph_workflow`, `datadog_graph_by_title`, `datadog_graph_dashboard`) and a Datadog auto action (`datadog_graph_aa`).
 
-`datadog_graph_workflow` - Get a snapshot of a specified query
+`datadog_graph_workflow`: Get a snapshot of a specified query
 
-`datadog_graph_by_title` - Get a snapshot of a query by title from a specific dashboard 
+`datadog_graph_by_title`: Get a snapshot of a query by title from a specific dashboard 
 
-`datadog_graph_dashboard` - Get a snapshot of a query, chosen from list of available queries (by title) from a specific dashboard
+`datadog_graph_dashboard`: Get a snapshot of a query, chosen from list of available queries (by title) from a specific dashboard
 
-`datadog_graph_aa` - An auto action that gets a snapshot of a query graph based upon a Pagerduty incident title
+`datadog_graph_aa`: An auto action that gets a snapshot of a query graph based upon a Pagerduty incident title
 
 These all us the [Datadog Snapshot API endpoint](https://docs.datadoghq.com/api/v1/snapshots/).
+
+### Env variables
+
+`datadog_graph_workflow`:
+* `datadog_query`: 
+* `last_x_minutes`:
+
+`datadog_graph_by_title`:  
+* `dashboard_id`:
+* `last_x_minutes`:
+* `title`:
+
+`datadog_graph_dashboard`:
+* `dashboard_id`:
+* `last_x_minutes`:
+
+`datadog_graph_aa`:
+* `dashboard_id`:
+* `last_x_minutes`:
+* `mapping`
 
 ### Troubleshooting
 
 #### If you are getting a bad response back from the API, like invalid JSON in the error message:
 
 The query that is being run might be an issue. The Snapshot API endpoint doesn't support all queries in Datadog. In all workflows, except `datadog_graph_by_title`,
-we use `graph_def` when sending the query to graph to Datadog. It supports more complex queries than `metric_query`. 
+we use `graph_def` when sending the query to graph to Datadog. It supports more complex queries than `metric_query`. `graph_def` is urllib encoded when sent to Datadog.
 
 Currently, the Datadog docs don't say all of the queries it supports. (Taylor is working on trying to get this clarified.) 
 
-From what we know the query must be: 
-* For a timeseries
-* Have no variables (variables are removed in the workflows)
+Types of queries the endpoint appears to support: 
+* Timeseries
+* Has to have no variables (variables are removed from queries in most workflows)
+* Single and multiple queries together
 
-We also support single and multiple queries. 
+Types of queries the endpoint appears to **not** support: 
+* Special types of queries like `log_query` 
 
 ## EC2 Run command
 
