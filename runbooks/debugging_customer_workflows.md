@@ -34,6 +34,9 @@ Is written in this field as: `["AWS/EC2", "DiskReadBytes", "InstanceId", "i-0123
 
 **Metric Title:** AWS EC2/RDS CPU Utilization
 
+## Datadog 
+There are three Datadog workflows (`datadog_graph_workflow`, `datadog_graph_by_title`, `datadog_graph_dashboard`) and a Datadog auto action (`datadog_graph_aa`).
+
 ## EC2 Run command
 
 The workflow takes an instance id and a shell command, which is executed and then checked until the command reaches a terminal state. The terminal state is printed to slack along with the standard output and standard error, if they exist.
