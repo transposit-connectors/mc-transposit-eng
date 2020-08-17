@@ -56,11 +56,11 @@ All of them use the [Datadog Snapshot API endpoint](https://docs.datadoghq.com/a
 
 `datadog_graph_dashboard`:
 * `dashboard_id`: Found in the URL of a dashboard. Example: `https://app.datadoghq.com/dashboard/[Dashboard ID here]/[Dashboard name]`
-* `last_x_minutes`: How long ago from the current time (in minutes) do you want to see in the graph? Example: 60
+* `last_x_minutes`: How long ago from the current time (in minutes) do you want to see in the graph? Example: `60`
 
 `datadog_graph_aa`:
 * `dashboard_id`: Found in the URL of a dashboard. Example: `https://app.datadoghq.com/dashboard/[Dashboard ID here]/[Dashboard name]`
-* `last_x_minutes`: How long ago from the current time (in minutes) do you want to see in the graph? Example: 60
+* `last_x_minutes`: How long ago from the current time (in minutes) do you want to see in the graph? Example: `60`
 * `mapping`: List of 1:1 mappings of pagerduty incident titles to datadog graph titles, quoted and separated by commas. Example: `"Slow response times":"Avg of system.cpu.user over *"`
 
 ### Troubleshooting
