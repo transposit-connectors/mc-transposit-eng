@@ -47,7 +47,7 @@ Rate limit from Datadog: "The rate limit for the Graph a Snapshot API call is 60
 
 The endpoint will return with a `snapshot_url`, but the image will not appear at the URL until a few seconds later, so we've added a `sleep(2)` before it is posted with `workflow.log.done`. More info [here](http://andreafalzetti.github.io/blog/2017/04/17/datadog-png-snapshot-not-showing.html).
 
-### Env variables
+### Env vars
 
 `datadog_graph_workflow`:
 * `datadog_query`: The query for the graph snapshot. You can view this for existing graphs in the raw text (button looks like </>) in your Datadog graphing editor. Example: `avg:system.load.15{*}`
@@ -74,7 +74,7 @@ The endpoint will return with a `snapshot_url`, but the image will not appear at
 The query that is being run might be an issue. The Snapshot API endpoint doesn't support all queries in Datadog. In all workflows, except `datadog_graph_by_title`,
 we use `graph_def` when sending the query to graph to Datadog. It supports more complex queries than `metric_query`. `graph_def` is urllib encoded when sent to Datadog.
 
-Currently, the Datadog docs don't say all of the queries it supports. (Taylor is working on trying to get this clarified.) 
+Currently, the Datadog docs don't say all of the queries it supports. (Taylor is working on trying to get this clarified.) There are probably others that we have not hit yet. Invalid JSON response from Datadog may be a sign that a query is attempting to be run that is not supported.
 
 Types of queries the endpoint appears to support: 
 * Timeseries
