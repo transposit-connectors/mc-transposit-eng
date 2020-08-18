@@ -41,7 +41,9 @@ There are multiple deployed Datadog workflows:
 * `datadog_graph_dashboard`: Get a snapshot of a query, chosen from list of available queries (by title) from a specific dashboard
 * `datadog_graph_aa`: An auto action that gets a snapshot of a query graph based upon a Pagerduty incident title
 
-All of them use the [Datadog Snapshot API endpoint](https://docs.datadoghq.com/api/v1/snapshots/). Rate limit from Datadog: "The rate limit for the Graph a Snapshot API call is 60 per hour per organization. This can be extended on demand." 
+All of them use the [Datadog Snapshot API endpoint](https://docs.datadoghq.com/api/v1/snapshots/). 
+
+Rate limit from Datadog: "The rate limit for the Graph a Snapshot API call is 60 per hour per organization. This can be extended on demand." 
 
 The endpoint will return with a `snapshot_url`, but the image will not appear at the URL until a few seconds later, so we've added a `sleep(2)` before it is posted with `workflow.log.done`. More info [here](http://andreafalzetti.github.io/blog/2017/04/17/datadog-png-snapshot-not-showing.html).
 
