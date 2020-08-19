@@ -1,3 +1,2 @@
----
-workflow: "transposit/create_default_runbooks:latest"
-prettyName: "Create default runbooks"
+workflow: 'transposit/create_default_runbooks:latest'
+prettyName: Create default runbooks
